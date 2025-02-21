@@ -1,0 +1,11 @@
+//
+//  CommonConfig.xcconfig
+//  swift
+//
+//  Created by 7x on 2023/12/14.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) NET_API_URL='$(NET_API_URL)' PSW_AES_KEY='$(PSW_AES_KEY)' PSW_SIGN_KEY='$(PSW_SIGN_KEY)'

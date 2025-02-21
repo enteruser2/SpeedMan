@@ -1,0 +1,17 @@
+//
+//  ReleaseConfig.xcconfig
+//  swift
+//
+//  Created by 7x on 2023/12/14.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+NET_API_URL = api.goodcutgame.com;
+// 加密key
+PSW_AES_KEY = SbcfzESStd7bGtdsQEC3cM9pGdR38Jsd;
+// 签名key
+PSW_SIGN_KEY = BxZnYcHbeTi21iXEe86hkB4RRji7fPE6;
+
+#include "Pods/Target Support Files/Pods-SpeedMan/Pods-SpeedMan.release.xcconfig"
+#include "CommonConfig.xcconfig"
