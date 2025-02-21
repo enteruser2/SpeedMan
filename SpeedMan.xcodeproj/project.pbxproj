@@ -1215,12 +1215,12 @@
 		FE3D00942B216D5800A25670 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -1251,10 +1251,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1275,37 +1275,19 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OBJC_INTEROP_MODE = objc;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/cocos2d-x",
-					"$(SRCROOT)/cocos2d-x/cocos",
-					"$(SRCROOT)/cocos2d-x/cocos/base",
-					"$(SRCROOT)/cocos2d-x/cocos/physics",
-					"$(SRCROOT)/cocos2d-x/cocos/math/kazmath",
-					"$(SRCROOT)/cocos2d-x/cocos/2d",
-					"$(SRCROOT)/cocos2d-x/cocos/gui",
-					"$(SRCROOT)/cocos2d-x/cocos/editor-support",
-					"$(SRCROOT)/cocos2d-x/cocos/audio/include",
-					"$(SRCROOT)/cocos2d-x/cocos/network",
-					"$(SRCROOT)/cocos2d-x/extensions",
-					"$(SRCROOT)/cocos2d-x/external",
-					"$(SRCROOT)/cocos2d-x/external/sources",
-					"$(SRCROOT)/cocos2d-x/external/chipmunk/include/chipmunk",
-					"$(SRCROOT)/cocos2d-x/external/mac/include/v8",
-					"$(SRCROOT)/cocos2d-x/cocos/scripting/js-bindings/manual",
-					"$(SRCROOT)/cocos2d-x/cocos/scripting/js-bindings/auto",
-				);
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		FE3D00952B216D5800A25670 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -1336,9 +1318,9 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1352,25 +1334,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_INTEROP_MODE = objc;
-				USER_HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/cocos2d-x",
-					"$(SRCROOT)/cocos2d-x/cocos",
-					"$(SRCROOT)/cocos2d-x/cocos/base",
-					"$(SRCROOT)/cocos2d-x/cocos/physics",
-					"$(SRCROOT)/cocos2d-x/cocos/math/kazmath",
-					"$(SRCROOT)/cocos2d-x/cocos/2d",
-					"$(SRCROOT)/cocos2d-x/cocos/gui",
-					"$(SRCROOT)/cocos2d-x/cocos/editor-support",
-					"$(SRCROOT)/cocos2d-x/cocos/audio/include",
-					"$(SRCROOT)/cocos2d-x/cocos/network",
-					"$(SRCROOT)/cocos2d-x/extensions",
-					"$(SRCROOT)/cocos2d-x/external",
-					"$(SRCROOT)/cocos2d-x/external/sources",
-					"$(SRCROOT)/cocos2d-x/external/chipmunk/include/chipmunk",
-					"$(SRCROOT)/cocos2d-x/external/mac/include/v8",
-					"$(SRCROOT)/cocos2d-x/cocos/scripting/js-bindings/manual",
-					"$(SRCROOT)/cocos2d-x/cocos/scripting/js-bindings/auto",
-				);
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1576,10 +1540,7 @@
 					"'-std=gnu99'",
 					"$(inherited)",
 				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"'-std=c++17'",
-					" ",
-				);
+				OTHER_CPLUSPLUSFLAGS = "'-std=c++17'  ";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
