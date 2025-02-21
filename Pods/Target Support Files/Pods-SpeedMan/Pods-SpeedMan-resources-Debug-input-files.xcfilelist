@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-SpeedMan/Pods-SpeedMan-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/FBAudienceNetwork/FBAudienceNetwork.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/GoogleUserMessagingPlatform/UserMessagingPlatformResources.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/MintegralAdSDK/MTGSDK.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/UnityAds/UnityAds.bundle
