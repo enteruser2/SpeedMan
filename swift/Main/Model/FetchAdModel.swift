@@ -19,10 +19,10 @@ class FetchAdModel : HandyJSON {
     }
     
     func mapping(mapper: HelpingMapper) {
-        mapper <<< type <-- "Cuttype"
-        mapper <<< id <-- "Cutid"
-        mapper <<< MaxVideoTotal <-- "CutMaxVideoTotal"
-        mapper <<< sId <-- "CutsId"
+        mapper <<< type <-- "Mantype"
+        mapper <<< id <-- "Manid"
+        mapper <<< MaxVideoTotal <-- "ManMaxVideoTotal"
+        mapper <<< sId <-- "MansId"
     }
 }
 

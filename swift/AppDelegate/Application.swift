@@ -21,11 +21,12 @@ enum ApplicationChildCoordinator {
 final class Application: NSObject {
     
     static let shared = Application()
-    
+
     //    var tabBarController: TabBarController?
     var window: UIWindow!
-    //    private var coordinators = [ApplicationChildCoordinator:Coordinator?]
     var nav: NavigationController?
+    
+    var application:UIApplication?
     
     func configureMainInterface(in window: UIWindow) {
         self.window = window
@@ -34,11 +35,9 @@ final class Application: NSObject {
     
     private func showLaunch() {
         let launch = LaunchViewController()
-//        let nav = NavigationController(rootViewController: launch)
-        window.rootViewController = launch
+        let nav = NavigationController(rootViewController: launch)
+        window.rootViewController = nav
     }
-    
-    
 }
 
 

@@ -9,6 +9,7 @@ import Foundation
 import RxSwift
 import SwiftyJSON
 import HandyJSON
+import AudioToolbox
 enum ADSceneType: String {
     case VideoAdId     = "iosVideoAdId"
     case VideoAdIdFreePlay     = "iosVideoAdIdFreePlay"
@@ -119,7 +120,12 @@ enum ADSceneType: String {
     {
         switch(type){
         case "1":
+//            let vc = PrivacyViewController()
+//            vc.modalPresentationStyle = .fullScreen
+//            CocosHelper.getCurrentVC().present(vc, animated: true)
+
             CocosHelper.getCurrentVC().navigationController?.pushViewController(PrivacyViewController(), animated: true)
+        
             break;
         default: break
 
@@ -142,8 +148,10 @@ enum ADSceneType: String {
         }
         UserManager.shared.isChangeLanguage = true
         UserdefaultManager.shared.appleLanguages = code
-        CocosHelper.getCurrentVC().navigationController?.pushViewController(LaunchViewController(), animated: true)
-//        Application.shared.configureMainInterface(in: Application.shared.window)
+        //        CocosHelper.getCurrentVC().navigationController?.pushViewController(LaunchViewController(), animated: true)
+        let vc = LaunchViewController()
+        vc.modalPresentationStyle = .fullScreen
+        CocosHelper.getCurrentVC().present(vc, animated: false)
     }
     
     @objc static func copyContent(text:String)
@@ -194,4 +202,7 @@ enum ADSceneType: String {
         return model.toJSONString()!
     }
     
+    @objc static func vibrate(){
+        AudioServicesPlaySystemSound(1519)
+    }
 }

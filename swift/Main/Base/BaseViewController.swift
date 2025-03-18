@@ -43,14 +43,15 @@ class BaseViewController: UIViewController{
         if(self.navigationController?.viewControllers.count ?? 1 > 1)
         {
             bgImage.frame = CGRectMake(0, 0,UIDevice.screenWidth, UIDevice.screenHeight)
-            bgImage.image = UIImage(named: "bg_image")
+//            bgImage.image = UIImage(named: "bg_image")
+            bgImage.backgroundColor = UIColor(hexString: "#EFF1FB")
             bgImage.contentMode = .scaleToFill
             view.addSubview(bgImage)
         }
         
         hbd_titleTextAttributes = [
             NSAttributedString.Key.font: UIFont(style: .ARIALBold, size: 20),
-            NSAttributedString.Key.foregroundColor : UIColor(hexString: "#1A1A1A") as Any
+            NSAttributedString.Key.foregroundColor : UIColor(hexString: "#254B62") as Any
         ]
         
 

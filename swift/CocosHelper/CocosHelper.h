@@ -20,6 +20,8 @@ extern NSString *  cocos_callbackId;
 
 + (void)nativeCallCocosEvent:(NSString*)action argument:(NSString*)argument callbackId:(NSString*)callbackId;
 
++ (void)nativeCallCocosRootEvent:(NSString*)action argument:(NSString*)argument callbackId:(NSString*)callbackId;
+
 + (void)cocosCallnativeEvent:(NSString*)action argument:(NSString*)argument callbackId:(NSString*)callbackId;
 
 + (void)apphideGoodCutLaunchView;

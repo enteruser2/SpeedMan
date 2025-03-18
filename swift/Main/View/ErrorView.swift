@@ -33,7 +33,7 @@ class ErrorView: UIView {
             l.textAlignment = .center
             let attributedStr = NSMutableAttributedString(string: str)
             attributedStr.addAttribute(NSAttributedString.Key.underlineStyle,value: 1, range: NSRange(location: 0, length: str.count))
-            attributedStr.addAttribute(.foregroundColor, value: UIColor(hexString: "#70490B")!, range: NSRange(location: 0, length: str.count))
+            attributedStr.addAttribute(.foregroundColor, value: UIColor(hexString: "#254B62")!, range: NSRange(location: 0, length: str.count))
             attributedStr.addAttribute(.font, value: UIFont(style: .ARIALBold, size: 17), range: NSRange(location: 0, length: str.count))
 
             l.attributedText = attributedStr
@@ -49,7 +49,7 @@ class ErrorView: UIView {
         addSubview(bgImgView)
         addSubview(imgView)
         addSubview(label)
-        self.backgroundColor = UIColor(hexString: "#FFFAE1")
+        self.backgroundColor = UIColor(hexString: "#FFFFFF")
         setUI()
     }
     

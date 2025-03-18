@@ -12,17 +12,18 @@
 		9A042DBA2D6703CF00A8C469 /* SDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A042DB62D6703CE00A8C469 /* SDKWrapper.m */; };
 		9A042DBB2D6703CF00A8C469 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A042DB92D6703CF00A8C469 /* Game.cpp */; };
 		9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A1161D92D16B07B00552173 /* GoogleService-Info.plist */; };
-		9A1614652D68370700DCD27A /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9A1614612D68370700DCD27A /* src */; };
-		9A1614662D68370700DCD27A /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9A1614622D68370700DCD27A /* main.js */; };
-		9A1614672D68370700DCD27A /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1614632D68370700DCD27A /* assets */; };
-		9A1614682D68370700DCD27A /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9A1614642D68370700DCD27A /* jsb-adapter */; };
 		9A4245452D6728B300EAFAE6 /* CocosAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245442D6728B300EAFAE6 /* CocosAppDelegate.m */; };
 		9A42455B2D67322500EAFAE6 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245542D67322500EAFAE6 /* AppDefine.swift */; };
 		9A42455E2D67322500EAFAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245572D67322500EAFAE6 /* AppDelegate.swift */; };
 		9A42455F2D67322500EAFAE6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245582D67322500EAFAE6 /* Application.swift */; };
 		9A43E5282D671AE9007245FA /* CocosBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A43E5262D671AE9007245FA /* CocosBridge.m */; };
+		9A7520B32D882F3300150107 /* CocosMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7520B22D882F3300150107 /* CocosMetalView.swift */; };
 		9AB64BD72CE5DA9900249D50 /* FetchAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */; };
 		9AC4FC442D02D4D700992F41 /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4FC432D02D4D700992F41 /* ShareModel.swift */; };
+		9AE80BD72D87C8AA00C1A7D6 /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9AE80BD32D87C8AA00C1A7D6 /* jsb-adapter */; };
+		9AE80BD82D87C8AA00C1A7D6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9AE80BD42D87C8AA00C1A7D6 /* main.js */; };
+		9AE80BD92D87C8AA00C1A7D6 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9AE80BD52D87C8AA00C1A7D6 /* src */; };
+		9AE80BDA2D87C8AA00C1A7D6 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE80BD62D87C8AA00C1A7D6 /* assets */; };
 		D4F87DC7DD7490151C0EB2DA /* Pods_SpeedMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08860A58F7FCB72DA28A086 /* Pods_SpeedMan.framework */; };
 		FE0C80E22BABC0EE0075950B /* AdsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E12BABC0EE0075950B /* AdsSwift.swift */; };
 		FE0C80E62BABC54B0075950B /* BaseRewardVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E42BABC54A0075950B /* BaseRewardVideo.m */; };
@@ -138,10 +139,6 @@
 		9A042DB82D6703CF00A8C469 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		9A042DB92D6703CF00A8C469 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		9A1161D92D16B07B00552173 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9A1614612D68370700DCD27A /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
-		9A1614622D68370700DCD27A /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		9A1614632D68370700DCD27A /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
-		9A1614642D68370700DCD27A /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
 		9A4245432D6728B300EAFAE6 /* CocosAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosAppDelegate.h; sourceTree = "<group>"; };
 		9A4245442D6728B300EAFAE6 /* CocosAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocosAppDelegate.m; sourceTree = "<group>"; };
 		9A4245542D67322500EAFAE6 /* AppDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
@@ -150,9 +147,15 @@
 		9A43E5262D671AE9007245FA /* CocosBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosBridge.m; sourceTree = "<group>"; };
 		9A43E5272D671AE9007245FA /* CocosBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosBridge.h; sourceTree = "<group>"; };
 		9A4985212D154021009E6902 /* exportOptionsAdHoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptionsAdHoc.plist; sourceTree = "<group>"; };
+		9A7520B22D882F3300150107 /* CocosMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocosMetalView.swift; sourceTree = "<group>"; };
+		9AA722A72D891A5600175AFF /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAdModel.swift; sourceTree = "<group>"; };
 		9AC4FC432D02D4D700992F41 /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
 		9AD88D042D0974FB00574DB5 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
+		9AE80BD32D87C8AA00C1A7D6 /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
+		9AE80BD42D87C8AA00C1A7D6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		9AE80BD52D87C8AA00C1A7D6 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		9AE80BD62D87C8AA00C1A7D6 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		9AEBC2CA2D6323F900E9576D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9B1D2A32143420CD35531DA1 /* Pods_CrazyBirdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrazyBirdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCC625526DC7927E3200B5C /* Pods-GoodCut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodCut.release.xcconfig"; path = "Target Support Files/Pods-GoodCut/Pods-GoodCut.release.xcconfig"; sourceTree = "<group>"; };
@@ -405,6 +408,7 @@
 		E8164A8375A58B39A9564B3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AA722A72D891A5600175AFF /* CoreHaptics.framework */,
 				9AEBC2CA2D6323F900E9576D /* libc++.tbd */,
 				FEEC99BE2B294F0900AD0A1A /* CoreGraphics.framework */,
 				FEEC99BC2B294F0200AD0A1A /* Photos.framework */,
@@ -767,10 +771,10 @@
 		FEEC9A512B29837200AD0A1A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9A1614632D68370700DCD27A /* assets */,
-				9A1614642D68370700DCD27A /* jsb-adapter */,
-				9A1614622D68370700DCD27A /* main.js */,
-				9A1614612D68370700DCD27A /* src */,
+				9AE80BD62D87C8AA00C1A7D6 /* assets */,
+				9AE80BD32D87C8AA00C1A7D6 /* jsb-adapter */,
+				9AE80BD42D87C8AA00C1A7D6 /* main.js */,
+				9AE80BD52D87C8AA00C1A7D6 /* src */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -805,6 +809,7 @@
 				9A0140072D069A95004D85BD /* PrivacyViewController.swift */,
 				FEEC9DB32B2984A400AD0A1A /* ViewController.swift */,
 				FE2414842B31473A001288AB /* LaunchViewController.swift */,
+				9A7520B22D882F3300150107 /* CocosMetalView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -965,18 +970,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE80BDA2D87C8AA00C1A7D6 /* assets in Resources */,
 				FE3D007C2B216D5700A25670 /* LaunchScreen.storyboard in Resources */,
 				FEDFB2062B2AF69A004210FC /* ReleaseConfig.xcconfig in Resources */,
 				9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */,
-				9A1614652D68370700DCD27A /* src in Resources */,
 				FEDFB2042B2AF69A004210FC /* DebugConfig.xcconfig in Resources */,
-				9A1614682D68370700DCD27A /* jsb-adapter in Resources */,
 				FE24149D2B318D70001288AB /* Arial.ttf in Resources */,
+				9AE80BD92D87C8AA00C1A7D6 /* src in Resources */,
 				FE24149E2B318D70001288AB /* Arial Bold Italic.ttf in Resources */,
-				9A1614662D68370700DCD27A /* main.js in Resources */,
 				FE3D00792B216D5700A25670 /* Assets.xcassets in Resources */,
-				9A1614672D68370700DCD27A /* assets in Resources */,
+				9AE80BD82D87C8AA00C1A7D6 /* main.js in Resources */,
 				FE3D00772B216D5500A25670 /* Main.storyboard in Resources */,
+				9AE80BD72D87C8AA00C1A7D6 /* jsb-adapter in Resources */,
 				FE24149C2B318D70001288AB /* Arial Bold.ttf in Resources */,
 				FEDFB2052B2AF69A004210FC /* CommonConfig.xcconfig in Resources */,
 				FE24149F2B318D70001288AB /* Arial Italic.ttf in Resources */,
@@ -1126,6 +1131,7 @@
 				FEEC9DDC2B29879800AD0A1A /* Double+Extension.swift in Sources */,
 				FEC0513C2B2C25C300000509 /* UIView+Rotate.m in Sources */,
 				FEEC9DE42B29879800AD0A1A /* ActivityIndicator.swift in Sources */,
+				9A7520B32D882F3300150107 /* CocosMetalView.swift in Sources */,
 				FE2414952B318BE0001288AB /* UILabel+Extensions.swift in Sources */,
 				FE2414902B3177A5001288AB /* LanchScreenView.swift in Sources */,
 				FEEC9DE72B29879800AD0A1A /* Toast+Rx.swift in Sources */,
@@ -1370,7 +1376,7 @@
 					"PSW_SIGN_KEY='$(PSW_SIGN_KEY)'",
 					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
 					"'GAME_NAME=\"NewProject\"'",
-					"'SCRIPT_XXTEAKEY=\"7cgmdsA39JvbjRMz\"'",
+					"'SCRIPT_XXTEAKEY=\"c9xnSbTnlHC73fZi\"'",
 					"'CC_PLATFORM_WINDOWS=2'",
 					"'CC_PLATFORM_MACOS=4'",
 					"'CC_PLATFORM_IOS=1'",
@@ -1515,7 +1521,7 @@
 					"\"$(SRCROOT)/native/external/sources/boost-source\"",
 				);
 				INFOPLIST_FILE = swift/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Good Cut";
+				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the app to access your camera";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow the app to save images to the album";
@@ -1825,7 +1831,7 @@
 					"\"$(SRCROOT)/native/external/sources/boost-source\"",
 				);
 				INFOPLIST_FILE = swift/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Good Cut";
+				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the app to access your camera";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow the app to save images to the album";

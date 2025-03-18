@@ -11,7 +11,7 @@ import RxSwift
 import FBSDKShareKit
 import FBSDKCoreKit
 class ViewController: BaseViewController, SharingDelegate {
-    
+
     func sharer(_ sharer: FBSDKShareKit.Sharing, didCompleteWithResults results: [String : Any]) {
         
     }
@@ -27,28 +27,22 @@ class ViewController: BaseViewController, SharingDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if(UserManager.shared.isGameRestart){
-            CocosHelper.nativeCallCocosEvent("", argument: "", callbackId: "HEADER_UPDATE_EVENT")
+            CocosHelper.nativeCallCocosRootEvent("", argument: "", callbackId: "HEADER_UPDATE_EVENT")
             UserManager.shared.isGameRestart = false
         }
         else if(UserManager.shared.isChangeLanguage)
         {
-            CocosHelper.nativeCallCocosEvent("", argument: "", callbackId: "LANGUAGE_UPDATE_EVENT")
+            CocosHelper.nativeCallCocosRootEvent("", argument: "", callbackId: "LANGUAGE_UPDATE_EVENT")
             UserManager.shared.isChangeLanguage = false
-
+            
         }
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = UIColor.red
-//        // Do any additional setup after loading the view.
-//        self.view = CocosBridge.shared().getCocosView()
-//        view.contentScaleFactor   = UIScreen.main.scale;
-//        view.isMultipleTouchEnabled = true;
-//        self.navigationController?.navigationBar.isHidden = true
-//        CommonTool.LogLine(message: "ViewController viewDidLoad :")
-////        self.hideSplashView()
+        //        self.navigationController?.navigationBar.isHidden = true
+        CommonTool.LogLine(message: "ViewController viewDidLoad :")
 
     }
     
@@ -60,9 +54,9 @@ class ViewController: BaseViewController, SharingDelegate {
                 lanchScreenView.removeFromSuperview()
             }
         }
-        
     }
     
+
     func showFaceBookShareDialog(model:ShareModel){
         let content = ShareLinkContent()
         content.quote = model.text

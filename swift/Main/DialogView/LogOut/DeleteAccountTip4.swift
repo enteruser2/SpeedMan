@@ -12,9 +12,9 @@ class DeleteAccountTip4: BaseDialogView {
     fileprivate lazy var okBtn: UIButton = {
         let okBtn = UIButton.init(type: .custom)
         okBtn.setTitle(UserManager.shared.translateModel?.t2715, for: .normal)
-        okBtn.setTitleColor(UIColor(hexString:"#FFFFFF"), for: .normal)
+        okBtn.setTitleColor(UIColor(hexString:"#165D93"), for: .normal)
         okBtn.titleLabel?.font = UIFont(style: .ARIALBold, size: 20)
-        okBtn.titleLabel?.addStroke(color: UIColor(hexString: "#753A23")!, width: -3.uiX)
+//        okBtn.titleLabel?.addStroke(color: UIColor(hexString: "#753A23")!, width: -3.uiX)
         okBtn.titleLabel?.textAlignment = .center
         okBtn.titleLabel?.numberOfLines = 0
         okBtn.setBackgroundImage(UIImage(named: "account_dialog_green_nor"), for: .normal)
@@ -36,7 +36,7 @@ class DeleteAccountTip4: BaseDialogView {
     fileprivate lazy var contentLabel: UILabel = {
         let contentLabel = UILabel()
         contentLabel.textAlignment = .left
-        contentLabel.textColor = UIColor(hexString: "#5F3D08")
+        contentLabel.textColor = UIColor(hexString: "#254B62")
         contentLabel.font = UIFont(style: .ARIAL, size: 17)
         contentLabel.numberOfLines = 0
         

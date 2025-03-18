@@ -15,47 +15,39 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate {
         self.getuserModel()
     }
     
-
+    
     var lanchScreenView: LanchScreenView!
-
+    
     private var loading = DisposeBag()
     let showErrorView = BehaviorRelay<Bool>(value: false)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view = CocosBridge.shared().getCocosView()
-        view.contentScaleFactor   = UIScreen.main.scale;
-        view.isMultipleTouchEnabled = true;
+        
         lanchScreenView = LanchScreenView(frame: CGRectMake(0, 0, UIDevice.screenWidth, UIDevice.screenHeight))
-        CocosBridge.shared().getCocosView().addSubview(lanchScreenView)
+        Application.shared.window.addSubview(lanchScreenView)
+        self.navigationController?.isNavigationBarHidden = true
+        errorBtnTap.asObservable().subscribe(onNext: { _ in
+            self.lanchScreenView.progressViwe.progress = 0
+            self.lanchScreenView.progressLabel.text = "0%"
+            self.lanchScreenView.isHidden = false
+            self.getTranslateModel()
+            
+        }, onError: {error in
+            
+            
+        }).disposed(by: loading)
         
         
+        self.showErrorView.bind(to: rx.showErrorView()).disposed(by: rx.disposeBag)
+        self.getTranslateModel()
         
-
-//        self.navigationController?.isNavigationBarHidden = true
-//        
-//        errorBtnTap.asObservable().subscribe(onNext: { _ in
-//            self.lanchScreenView.progressViwe.progress = 0
-//            self.lanchScreenView.progressLabel.text = "0%"
-//            self.lanchScreenView.isHidden = false
-//            self.getTranslateModel()
-//            
-//        }, onError: {error in
-//
-//
-//        }).disposed(by: loading)
-//        
-//        
-//        self.showErrorView.bind(to: rx.showErrorView()).disposed(by: rx.disposeBag)
-//        
-        self.openViewController()
-
     }
     
-
+    
     func getTranslateModel() {
         UserManager.shared.translateRequest().asObservable().subscribe(onNext: { translatemodel in
-
+            
             CommonTool.LogLine(message: "translateRequest： \(String(describing: translatemodel))")
             UserManager.shared.translateModel = translatemodel
             self.getdeviceLoginModel()
@@ -124,10 +116,10 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate {
     
     func getuserModel() {
         CommonTool.LogLine(message: "LaunchViewController getuserModel()")
-
+        self.lanchScreenView.type = 2
+        
         UserManager.shared.loginUser().asObservable().subscribe(onNext: { uiserModel in
             CommonTool.LogLine(message: "uiserModel ： \(String(describing: uiserModel?.toJSONString()))")
-            self.lanchScreenView.type = 2
             
             self.openViewController()
             
@@ -140,48 +132,57 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate {
     
     func openViewController()
     {
-//        if(self.navigationController != nil)
-//        {
-//            self.lanchScreenView.type = 3
-// 
-//            var index = 0
-//            if(self.navigationController!.viewControllers.count > 1)
-//            {
-//              index = 1
-//            }
-//            else
-//            {
-//                index = 0
-//            }
-//            self.navigationController?.pushViewController(ViewController(), animated: false)
-//            let updatedViewControllers = NSMutableArray(array: self.navigationController!.viewControllers)
-//            updatedViewControllers.removeObject(at: index)
-//            self.navigationController?.viewControllers = updatedViewControllers as! [UIViewController]
-//            
-//        }
+        //        if(self.navigationController != nil)
+        //        {
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            // 2秒后执行的代码
-            print("这条消息将在2秒后打印")
-            self.lanchScreenView.removeFromSuperview()
-//            var nav = NavigationController(rootViewController: self)
-//            self.navigationController?.pushViewController(ViewController(), animated: true)
-            var vc = ViewController()
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
-            // 例如，更新UI
-            // self.someLabel.text = "更新后的文本"
+        //                        var index = 0
+        //                        if(self.navigationController!.viewControllers.count > 1)
+        //                        {
+        //                          index = 1
+        //                        }
+        //                        else
+        //                        {
+        //                            index = 0
+        //                        }
+        //
+        //                        self.navigationController?.pushViewController(ViewController(), animated: true)
+        //                        let updatedViewControllers = NSMutableArray(array: self.navigationController!.viewControllers)
+        //                        updatedViewControllers.removeObject(at: index)
+        //                        self.navigationController?.viewControllers = updatedViewControllers as! [UIViewController]
+        
+        CommonTool.LogLine(message: "openViewController：22222222")
+        
+        if(!CocosBridge.shared().isLoadView)
+        {
+            let vc = ViewController()
+            Application.shared.window?.rootViewController = vc
+            Application.shared.window.addSubview(self.lanchScreenView)
+            self.lanchScreenView.type = 3
+            
+            
+            CocosBridge.shared().initCocosMain()
+            vc.view = CocosBridge.shared().getCocosView()
+            vc.view.contentScaleFactor   = UIScreen.main.scale;
+            vc.view.isMultipleTouchEnabled = true;
+            CocosBridge.shared().application(Application.shared.application!,didFinishLaunchingWithOptions: Dictionary())
         }
+        else
+        {
+            self.dismiss(animated: false)
+        }
+        
+        
+        //        }
     }
     
- 
- 
+    
+    
     
     func notNetWorkEvent() {
         self.lanchScreenView.isHidden = true
         self.showErrorView.accept(true)
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }

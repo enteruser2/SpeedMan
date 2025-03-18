@@ -14,6 +14,7 @@
     
 @interface CocosBridge()
 @property (nonatomic,strong) View * cocosView;
+
 @end
 
 @implementation CocosBridge
@@ -22,6 +23,7 @@
 {
     self = [super init];
     if (self) {
+        self.isLoadView =  false;
         CGRect bounds = [[UIScreen mainScreen] bounds];
         self.cocosView = [[View alloc] initWithFrame:bounds];
         
@@ -49,27 +51,34 @@ static CocosBridge* _bridge = nil;
 
 
 - (View *)getCocosView {
-    
+    self.isLoadView =  true;
     return self.cocosView;
-
 }
 
 
 - (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[[CocosAppDelegate shared] appDelegateBridge] application:application didFinishLaunchingWithOptions:launchOptions];
+    if (self.isLoadView) {
+        [[[CocosAppDelegate shared] appDelegateBridge] application:application didFinishLaunchingWithOptions:launchOptions];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    [[[CocosAppDelegate shared] appDelegateBridge] applicationWillResignActive:application];
+    if (self.isLoadView) {
+        [[[CocosAppDelegate shared] appDelegateBridge] applicationWillResignActive:application];
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [[[CocosAppDelegate shared] appDelegateBridge] applicationDidBecomeActive:application];
+    if (self.isLoadView) {
+        [[[CocosAppDelegate shared] appDelegateBridge] applicationDidBecomeActive:application];
+    }
 }
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    [[[CocosAppDelegate shared] appDelegateBridge] applicationWillTerminate:application];
+    if (self.isLoadView) {
+        [[[CocosAppDelegate shared] appDelegateBridge] applicationWillTerminate:application];
+    }
 }
 
 @end

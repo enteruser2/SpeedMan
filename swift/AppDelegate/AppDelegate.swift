@@ -15,11 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        CocosBridge.shared().initCocosMain()
         SDKWrapper.shared().application(application, didFinishLaunchingWithOptions: launchOptions ?? Dictionary())
+        Application.shared.application = application
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.backgroundColor = .white
@@ -30,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         FirebaseApp.configure()
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-        CocosBridge.shared().application(application,didFinishLaunchingWithOptions: launchOptions ?? Dictionary())
     
 //#if DEBUG
 //        let loadSuccess = Bundle.init(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle")?.load()
@@ -130,13 +129,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillResignActive(_ application: UIApplication) {
         SDKWrapper.shared().applicationWillResignActive(application)
-        CocosBridge.shared().applicationWillResignActive(application)
+        CocosBridge().applicationWillResignActive(application)
 
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         SDKWrapper.shared().applicationDidBecomeActive(application)
-        CocosBridge.shared().applicationDidBecomeActive(application)
+        CocosBridge().applicationDidBecomeActive(application)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -149,12 +148,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         SDKWrapper.shared().applicationWillTerminate(application)
-        CocosBridge.shared().applicationWillTerminate(application)
+        CocosBridge().applicationWillTerminate(application)
     }
 
     func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
         SDKWrapper.shared().applicationDidReceiveMemoryWarning(application)
     }
+
+    
 
 }
 

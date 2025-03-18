@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CocosBridge : NSObject
+@property (nonatomic,assign) BOOL isLoadView;
 
 
 + (instancetype)shared;

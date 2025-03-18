@@ -18,9 +18,9 @@ class ShareModel : HandyJSON {
     }
     
     func mapping(mapper: HelpingMapper) {
-        mapper <<< title <-- "Cuttitle"
-        mapper <<< text <-- "Cuttext"
-        mapper <<< url <-- "Cuturl"
+        mapper <<< title <-- "Mantitle"
+        mapper <<< text <-- "Mantext"
+        mapper <<< url <-- "Manurl"
     }
 }
 

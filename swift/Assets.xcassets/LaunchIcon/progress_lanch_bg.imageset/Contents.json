@@ -10,8 +10,8 @@
       "resizing" : {
         "cap-insets" : {
           "bottom" : 27,
-          "left" : 27,
-          "right" : 26,
+          "left" : 33,
+          "right" : 37,
           "top" : 26
         },
         "center" : {
@@ -29,8 +29,8 @@
       "resizing" : {
         "cap-insets" : {
           "bottom" : 40,
-          "left" : 35,
-          "right" : 32,
+          "left" : 75,
+          "right" : 65,
           "top" : 40
         },
         "center" : {

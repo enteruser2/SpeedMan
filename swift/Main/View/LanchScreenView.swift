@@ -10,7 +10,7 @@ import SnapKit
 class LanchScreenView: UIView {
     
     var type = 0
-    var time = 1.5
+    var time = 0.5
     private let bgImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "launchScreen_bg")
@@ -54,8 +54,8 @@ class LanchScreenView: UIView {
         label.text = "0%"
         label.textAlignment = .center
         label.font = UIFont.init(style: .ARIALBold, size: 17)
-        label.textColor = UIColor(hexString: "#FFFE99")
-        label.addStroke(color: UIColor(hexString: "#753A16") ?? UIColor.black, width: -5.0)
+        label.textColor = UIColor(hexString: "#ffffff")
+        label.addStroke(color: UIColor(hexString: "#000000") ?? UIColor.black, width: -5.0)
         return label
     }()
     
@@ -67,6 +67,7 @@ class LanchScreenView: UIView {
         setUI()
             
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -110,14 +111,14 @@ class LanchScreenView: UIView {
             make.bottom.equalTo(self).offset(-160.uiX)
             make.left.equalTo(self).offset(50.uiX)
             make.right.equalTo(self).offset(-50.uiX)
-            make.height.equalTo(40)
+            make.height.equalTo(32)
         }
         
         progressViwe.snp.makeConstraints { make in
-            make.left.equalTo(progressBgViwe).offset(9)
-            make.right.equalTo(progressBgViwe).offset(-9)
-            make.top.equalTo(progressBgViwe).offset(9)
-            make.bottom.equalTo(progressBgViwe).offset(-9)
+            make.left.equalTo(progressBgViwe).offset(5)
+            make.right.equalTo(progressBgViwe).offset(-5)
+            make.top.equalTo(progressBgViwe).offset(5)
+            make.bottom.equalTo(progressBgViwe).offset(-6)
         }
         
         progressLabel.snp.makeConstraints { make in
@@ -131,6 +132,7 @@ class LanchScreenView: UIView {
     }
     
     @objc private func updateProgressView() {
+
         var progress = progressViwe.progress
         switch type {
         case 0:
@@ -138,7 +140,6 @@ class LanchScreenView: UIView {
                 progress = 0.7
                 progressViwe.progress = progress
                 progressLabel.text = "70%"
-                return
             }
             break
         case 1:
@@ -156,14 +157,12 @@ class LanchScreenView: UIView {
             time = 0.1
             progressViwe.progress = progress
             progressLabel.text = "90%"
-            return
         case 3:
 //            if(progress >= 0.99){
                 progress = 1
 //            }
             progressViwe.progress = progress
             progressLabel.text = "100%"
-            return
         default:
             break
         }
@@ -172,7 +171,8 @@ class LanchScreenView: UIView {
             progressViwe.progress = 0.3
             progress = progressViwe.progress
         }
-        else if progressViwe.progress >= 1 {
+        else if progressViwe.progress >= 1.0 {
+
             progressLabel.text = "100%"
             timer?.invalidate()
             timer = nil

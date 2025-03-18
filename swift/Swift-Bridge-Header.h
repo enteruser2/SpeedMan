@@ -36,8 +36,6 @@
 #import <CommonCrypto/CommonCryptor.h>
 //#import <SDWebImage.h>
 
-//#import "platform/ios/AppDelegateBridge.h"
 #import "SDKWrapper.h"
-
 //#import "UITableView+FDTemplateLayoutCell.h"
 

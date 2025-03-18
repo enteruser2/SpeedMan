@@ -130,7 +130,7 @@ import AppLovinSDK
         {
             type = type.replacingOccurrences(of: "ios", with: "")
         }
-        CocosHelper.nativeCallCocosEvent("", argument: "GoodCutFail", callbackId: type)
+        CocosHelper.nativeCallCocosEvent("", argument: "SpeedManFail", callbackId: type)
     }
     
     private func videoCallCocosSuccess(postionADSceneType:String)
@@ -140,7 +140,7 @@ import AppLovinSDK
         {
             type = type.replacingOccurrences(of: "ios", with: "")
         }
-        CocosHelper.nativeCallCocosEvent("", argument: "GoodCutSuccess", callbackId: type)
+        CocosHelper.nativeCallCocosEvent("", argument: "SpeedManSuccess", callbackId: type)
     }
     
     func adShow(secenType:String) {

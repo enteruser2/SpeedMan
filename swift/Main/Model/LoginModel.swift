@@ -20,13 +20,13 @@ class LoginModel :HandyJSON {
     }
     
     func mapping(mapper: HelpingMapper) {
-        mapper <<< login_id <-- "Cutlogin_id"
-        mapper <<< login_type <-- "Cutlogin_type"
-        mapper <<< avatar <-- "Cutavatar"
-        mapper <<< nickname <-- "Cutnickname"
-        mapper <<< email <-- "Cutemail"
-        mapper <<< access_token <-- "Cutaccess_token"
-        mapper <<< os_type <-- "Cutos_type"
+        mapper <<< login_id <-- "Manlogin_id"
+        mapper <<< login_type <-- "Manlogin_type"
+        mapper <<< avatar <-- "Manavatar"
+        mapper <<< nickname <-- "Mannickname"
+        mapper <<< email <-- "Manemail"
+        mapper <<< access_token <-- "Manaccess_token"
+        mapper <<< os_type <-- "Manos_type"
     }
 }
 

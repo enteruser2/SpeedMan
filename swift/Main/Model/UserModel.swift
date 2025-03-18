@@ -19,12 +19,12 @@ class HeaderModel : HandyJSON {
     required init() {}
     
     func mapping(mapper: HelpingMapper) {
-        mapper <<< platform <-- "Cutplatform"
-        mapper <<< channel <-- "Cutchannel"
-        mapper <<< language <-- "Cutlanguage"
-        mapper <<< version <-- "Cutversion"
-        mapper <<< token <-- "Cuttoken"
-        mapper <<< url <-- "Cuturl"
+        mapper <<< platform <-- "Manplatform"
+        mapper <<< channel <-- "Manchannel"
+        mapper <<< language <-- "Manlanguage"
+        mapper <<< version <-- "Manversion"
+        mapper <<< token <-- "Mantoken"
+        mapper <<< url <-- "Manurl"
     }
 }
 
@@ -41,13 +41,13 @@ class DeviceLoginModel : HandyJSON {
     required init() {}
     
     func mapping(mapper: HelpingMapper) {
-        mapper <<< IsCheckVersion <-- "CutIsCheckVersion"
-        mapper <<< display_fb <-- "Cutdisplay_fb"
-        mapper <<< login_type <-- "Cutlogin_type"
-        mapper <<< token <-- "Cuttoken"
-        mapper <<< LogoutAt <-- "CutLogoutAt"
-        mapper <<< id <-- "Cutid"
-        mapper <<< login_status <-- "Cutlogin_status"
+        mapper <<< IsCheckVersion <-- "ManIsCheckVersion"
+        mapper <<< display_fb <-- "Mandisplay_fb"
+        mapper <<< login_type <-- "Manlogin_type"
+        mapper <<< token <-- "Mantoken"
+        mapper <<< LogoutAt <-- "ManLogoutAt"
+        mapper <<< id <-- "Manid"
+        mapper <<< login_status <-- "Manlogin_status"
     }
 }
 
@@ -59,8 +59,8 @@ class AdModel : HandyJSON {
     required init() {}
     
     func mapping(mapper: HelpingMapper) {
-        mapper <<< type <-- "Cuttype"
-        mapper <<< id <-- "Cutid"
+        mapper <<< type <-- "Mantype"
+        mapper <<< id <-- "Manid"
     }
 }
 
@@ -134,79 +134,117 @@ class UserModel : HandyJSON {
     var VIPCash: Int64 = 0
     var CirculateLevel: Int = 0
     
-    var CutInvitationCodeReward: Int = 0
-    var CutLevelStar: String = ""// 关卡星星
-    var CutGetPointsStars: Int = 0//领积分所需扣除星星
-    var CutGetPointsFriends: Int = 0//领积分所需邀请人数
-    var CutVIPUpGradeFriends: String = ""//VIP帮助人数等级对应
-    var CutCashAmount: Int = 0//VIP帮助人数等级对应
-    var CutRestartFriends: Int = 0//重启5倍积分活动所需邀请人数
-    var CutFreeRestartTimes: Int = 0//超过重置次数需要观看视频
-    var CutIx1: Int = 0//下线获得到的钻石
-    var CutIx2: Int = 0//下线获得到的vip经验
-    var CutGetEnergyNumber: Int = 0//每日体力可购买数
-    var CutGetEnergyTimes: Int = 0//每次买到的体力
+    var ManInvitationCodeReward: Int = 0
+    var ManLevelStar: String = ""// 关卡星星
+    var ManGetPointsStars: Int = 0//领积分所需扣除星星
+    var ManGetPointsFriends: Int = 0//领积分所需邀请人数
+    var ManVIPUpGradeFriends: String = ""//VIP帮助人数等级对应
+    var ManCashAmount: Int = 0//VIP帮助人数等级对应
+    var ManRestartFriends: Int = 0//重启5倍积分活动所需邀请人数
+    var ManFreeRestartTimes: Int = 0//超过重置次数需要观看视频
+    var ManIx1: Int = 0//下线获得到的钻石
+    var ManIx2: Int = 0//下线获得到的vip经验
+    var ManGetEnergyNumber: Int = 0//每日体力可购买数
+    var ManGetEnergyTimes: Int = 0//每次买到的体力
     //等于1显示弹窗
-    var CutIndexPop: Int = 0
+    var ManIndexPop: Int = 0
     //关卡倒计时时间
-    var CutLevelTime: Int = 0
+    var ManLevelTime: Int = 0
+    
+     // 无敌关卡
+     var ManInvincibleLevel: String = ""
+
+      //特殊任务入口显示
+     var ManButtonShowGold: Int64 = 0
+
+      //邀请页面金钱显示
+     var ManRewardCashPerPerson: Float = 0
+
+      //宝箱最佳奖励存钱罐金币
+     var ManLevelBoxRewards: Int64 = 0
+      //宝箱奖励钻石
+     var ManLevelBoxDiamond: Int64 = 0
+      //关卡钞票
+     var ManLevelRewards: Float = 0
+       //互动任务奖励
+     var ManInteractActive: Int64 = 0
+      //累计活跃总奖励
+     var ManTotalActiveRewards: Int64 = 0
+
+      //帽子皮肤
+     var ManSkin: String = ""
+
+      //鞋子皮肤
+     var ManSkin2: String = ""
+
+      //道具等级
+     var ManLevelProp: Int = 0
+
+      //砸罐能获得的金币
+     var ManSmashingCansGolds: Int64 = 0
+
+      //特殊任务见面礼金
+     var ManFirstGift: Int64 = 0
+
+      //重启时新的砸罐次数
+     var ManSmashingCansNewTimes: Int = 0
         required init() {
             
         }
     
     func mapping(mapper: HelpingMapper) {
-        mapper <<< MonetaryUnit <-- "CutMonetaryUnit"
-        mapper <<< USDExchangRate <-- "CutUSDExchangRate"
-        mapper <<< invite_id <-- "Cutinvite_id"
-        mapper <<< InviteID <-- "CutInviteID"
-        mapper <<< SendEvaluate <-- "CutSendEvaluate"
-        mapper <<< FBCustomerServiceNumber <-- "CutFBCustomerServiceNumber"
-        mapper <<< MoneyLock <-- "CutMoneyLock"
-        mapper <<< VIPLevel <-- "CutVIPLevel"
-        mapper <<< homeId <-- "Cutid"
-        mapper <<< money <-- "Cutmoney"
-        mapper <<< gold <-- "Cutgold"
-        mapper <<< level <-- "Cutlevel"
-        mapper <<< avatar <-- "Cutavatar"
-        mapper <<< nickname <-- "Cutnickname"
-        mapper <<< OfflineReward <-- "CutOfflineReward"
-        mapper <<< OfflineRewardBase <-- "CutOfflineRewardBase"
-        mapper <<< OfflineRewardHigh <-- "CutOfflineRewardHigh"
-        mapper <<< UpdateSwitch <-- "CutUpdateSwitch"
-        mapper <<< VersionUpgradeDesc <-- "CutVersionUpgradeDesc"
-        mapper <<< VersionUpgradeDesc2 <-- "CutVersionUpgradeDesc2"
-        mapper <<< LatestVersion <-- "CutLatestVersion"
-        mapper <<< MustUpdateVersionStatus <-- "CutMustUpdateVersionStatus"
-        mapper <<< RewardPerPerson <-- "CutRewardPerPerson"
-        mapper <<< InvitationLevelReward <-- "CutInvitationLevelReward"
-        mapper <<< share_url <-- "Cutshare_url"
-        mapper <<< login_type <-- "Cutlogin_type"
-        mapper <<< ReviewVersion <-- "CutReviewVersion"
-        mapper <<< country <-- "Cutcountry"
-        mapper <<< GoldPrice <-- "CutGoldPrice"
-        mapper <<< Banknote1 <-- "CutBanknote1"
-        mapper <<< MaxWithdrawalTimesPerDay <-- "CutMaxWithdrawalTimesPerDay"
-        mapper <<< WithdrawMoney <-- "CutWithdrawMoney"
-        mapper <<< BroadcastMinCash <-- "CutBroadcastMinCash"
-        mapper <<< FullVideoIdFinal <-- "CutFullVideoIdFinal"
-        mapper <<< BroadcastMinCash <-- "CutVideoIdFinal"
-        mapper <<< af_ads_config <-- "Cutaf_ads_config"
-        mapper <<< af_island_config <-- "Cutaf_island_config"
-        mapper <<< MaxVideoAd <-- "CutMaxVideoAd"
-        mapper <<< UpdateVersionRewardGold <-- "CutUpdateVersionRewardGold"
+        mapper <<< MonetaryUnit <-- "ManMonetaryUnit"
+        mapper <<< USDExchangRate <-- "ManUSDExchangRate"
+        mapper <<< invite_id <-- "Maninvite_id"
+        mapper <<< InviteID <-- "ManInviteID"
+        mapper <<< SendEvaluate <-- "ManSendEvaluate"
+        mapper <<< FBCustomerServiceNumber <-- "ManFBCustomerServiceNumber"
+        mapper <<< MoneyLock <-- "ManMoneyLock"
+        mapper <<< VIPLevel <-- "ManVIPLevel"
+        mapper <<< homeId <-- "Manid"
+        mapper <<< money <-- "Manmoney"
+        mapper <<< gold <-- "Mangold"
+        mapper <<< level <-- "Manlevel"
+        mapper <<< avatar <-- "Manavatar"
+        mapper <<< nickname <-- "Mannickname"
+        mapper <<< OfflineReward <-- "ManOfflineReward"
+        mapper <<< OfflineRewardBase <-- "ManOfflineRewardBase"
+        mapper <<< OfflineRewardHigh <-- "ManOfflineRewardHigh"
+        mapper <<< UpdateSwitch <-- "ManUpdateSwitch"
+        mapper <<< VersionUpgradeDesc <-- "ManVersionUpgradeDesc"
+        mapper <<< VersionUpgradeDesc2 <-- "ManVersionUpgradeDesc2"
+        mapper <<< LatestVersion <-- "ManLatestVersion"
+        mapper <<< MustUpdateVersionStatus <-- "ManMustUpdateVersionStatus"
+        mapper <<< RewardPerPerson <-- "ManRewardPerPerson"
+        mapper <<< InvitationLevelReward <-- "ManInvitationLevelReward"
+        mapper <<< share_url <-- "Manshare_url"
+        mapper <<< login_type <-- "Manlogin_type"
+        mapper <<< ReviewVersion <-- "ManReviewVersion"
+        mapper <<< country <-- "Mancountry"
+        mapper <<< GoldPrice <-- "ManGoldPrice"
+        mapper <<< Banknote1 <-- "ManBanknote1"
+        mapper <<< MaxWithdrawalTimesPerDay <-- "ManMaxWithdrawalTimesPerDay"
+        mapper <<< WithdrawMoney <-- "ManWithdrawMoney"
+        mapper <<< BroadcastMinCash <-- "ManBroadcastMinCash"
+        mapper <<< FullVideoIdFinal <-- "ManFullVideoIdFinal"
+        mapper <<< BroadcastMinCash <-- "ManVideoIdFinal"
+        mapper <<< af_ads_config <-- "Manaf_ads_config"
+        mapper <<< af_island_config <-- "Manaf_island_config"
+        mapper <<< MaxVideoAd <-- "ManMaxVideoAd"
+        mapper <<< UpdateVersionRewardGold <-- "ManUpdateVersionRewardGold"
         
         
-        mapper <<< ProbabilitySpecialEvents <-- "CutProbabilitySpecialEvents"
-        mapper <<< DailyStars <-- "CutDailyStars"
-        mapper <<< MaxEnergy <-- "CutMaxEnergy"
-        mapper <<< EnergyInterval <-- "CutEnergyInterval"
-        mapper <<< BindingReward <-- "CutBindingReward"
-        mapper <<< RobStatus <-- "CutRobStatus"
-        mapper <<< diamond <-- "Cutdiamond"
-        mapper <<< AchievementStars <-- "CutAchievementStars"
-        mapper <<< PointRaceCash <-- "CutPointRaceCash"
-        mapper <<< VIPCash <-- "CutVIPCash"
-        mapper <<< CirculateLevel <-- "CutCirculateLevel"
+        mapper <<< ProbabilitySpecialEvents <-- "ManProbabilitySpecialEvents"
+        mapper <<< DailyStars <-- "ManDailyStars"
+        mapper <<< MaxEnergy <-- "ManMaxEnergy"
+        mapper <<< EnergyInterval <-- "ManEnergyInterval"
+        mapper <<< BindingReward <-- "ManBindingReward"
+        mapper <<< RobStatus <-- "ManRobStatus"
+        mapper <<< diamond <-- "Mandiamond"
+        mapper <<< AchievementStars <-- "ManAchievementStars"
+        mapper <<< PointRaceCash <-- "ManPointRaceCash"
+        mapper <<< VIPCash <-- "ManVIPCash"
+        mapper <<< CirculateLevel <-- "ManCirculateLevel"
     }
 }
 

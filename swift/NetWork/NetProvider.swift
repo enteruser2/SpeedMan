@@ -70,23 +70,23 @@ extension NetAPI: TargetType {
     public var path: String {
         switch self {
         case .translate:
-            return "/Api/QOyNL6HI"
+            return "/Api/A11"
         case .deviceLogin:
-            return "/Api/pZ8cOF"
+            return "/Api/A13"
         case .recovery:
-            return "/Api/GFiy3h"
+            return "/Api/A30"
         case .login:
-            return "/Api/m2eAkX"
+            return "/Api/A15"
         case .userInfo:
-            return "/Api/ugd8SaQ5"
+            return "/Api/A16"
         case .fetchAd:
-            return "/Api/k9MpxwV"
+            return "/Api/A34"
         case .adPoster:
-            return "/Api/NvpnzoYa"
+            return "/Api/A35"
         case .clickVideoAd:
-            return "/Api/FWhTove"
+            return "/Api/A37"
         case .privacy:
-            return "/Api/vsyZJ2"
+            return "/Api/A12"
         }
         
     }
@@ -123,7 +123,7 @@ extension NetAPI: TargetType {
             let inviteStr = NSString.readUIPasteboard()
             var invite_id = ""
             if let inviteText = inviteStr{
-                if(!inviteText.isEmpty && inviteText.contains("good_cut-"))
+                if(!inviteText.isEmpty && inviteText.contains("speed_man-"))
                 {
                     invite_id = inviteText
                 }
@@ -205,15 +205,15 @@ extension NetAPI: TargetType {
         var headers:[String : String] = [:]
         headers["Content-Type"]  = "application/json"
         headers["Accept"]        = "application/json"
-        headers["Cutplatform"]      = "2"
-        headers["Cutchannel"]       = channel
-        headers["Cutlanguage"]      = UserdefaultManager.shared.appleLanguages
-        headers["Cutversion"]       = UserdefaultManager.shared.version
-        headers["Cuttimestamp"]     = timestamp!
-        headers["Cuttoken"]         = token
+        headers["Manplatform"]      = "2"
+        headers["Manchannel"]       = channel
+        headers["Manlanguage"]      = UserdefaultManager.shared.appleLanguages
+        headers["Manversion"]       = UserdefaultManager.shared.version
+        headers["Mantimestamp"]     = timestamp!
+        headers["Mantoken"]         = token
         CommonTool.LogLine(message: "token:"+(headers.jsonString() ?? ""))
         let sign = String(format: "%@%@%@%@%@", token,timestamp!,channel,raw,ConfigManager.shared.getPSWSIGNKEY())
-        headers["Cutsign"]          = sign.md5.uppercased()
+        headers["Mansign"]          = sign.md5.uppercased()
         return headers
     }
 }

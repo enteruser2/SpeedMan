@@ -13,7 +13,7 @@ class EmptyView: UIView {
     let imgView = UIImageView(image: UIImage(named: "empty_pop_image"))
     let label: UILabel = {
         let l = UILabel()
-        l.textColor = UIColor.init(hexString: "#6D9179")
+        l.textColor = UIColor.init(hexString: "#254B62")
         l.font = .init(style: .ARIALBold, size: 16.uiX)
         l.textAlignment = .center
         return l

@@ -16,7 +16,7 @@ class PrivacyModel : HandyJSON {
     }
     
     func mapping(mapper: HelpingMapper) {
-        mapper <<< content <-- "Cutcontent"
+        mapper <<< content <-- "Mancontent"
     }
 }
 

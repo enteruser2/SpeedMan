@@ -24,7 +24,7 @@ class BaseDialogView: UIView {
     
     lazy var bgImageView: UIImageView = {
        let bgImageView = UIImageView.init()
-        bgImageView.image = .init(named: "dialog_title_bg")
+//        bgImageView.image = .init(named: "dialog_title_bg")
        return bgImageView
    }()
     
@@ -35,14 +35,14 @@ class BaseDialogView: UIView {
     
     fileprivate lazy var titleImageView: UIImageView = {
         let titleImageView = UIImageView.init()
-//        titleImageView.image = .init(named: "dialog_title_bg")
+        titleImageView.image = .init(named: "dialog_title_bg")
         return titleImageView
     }()
     
     fileprivate lazy var titleLabel: UILabel = {
         let titleLabel = UILabel.init()
         titleLabel.frame = CGRectMake(0, 0, 300, 0)
-        titleLabel.textColor = UIColor(hexString: "#FFFFFF")
+        titleLabel.textColor = UIColor(hexString: "#254B62")
         titleLabel.font = UIFont.init(style: .ARIALBold, size: 26)
         titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .center
@@ -78,7 +78,7 @@ class BaseDialogView: UIView {
     func setTitleText(text:String?){
         
         titleLabel.text = text
-        titleLabel.addStroke(color: UIColor(hexString: "#A54E01")!, width: -5.0)
+//        titleLabel.addStroke(color: UIColor(hexString: "#254B62")!, width: -5.0)
         setUI()
     }
     
@@ -106,8 +106,8 @@ class BaseDialogView: UIView {
         
         bgView.snp.makeConstraints { make in
             make.center.equalTo(self)
-            make.leading.equalTo(self).offset(21.uiX)
-            make.trailing.equalTo(self).offset(-21.uiX)
+            make.leading.equalTo(self).offset(25.uiX)
+            make.trailing.equalTo(self).offset(-25.uiX)
             make.top.equalTo(self.titleBgView.snp.top).offset(-70.uiX)
             make.bottom.equalTo(self.conentBgView.snp.bottom).offset(20.uiX)
         }
@@ -145,8 +145,8 @@ class BaseDialogView: UIView {
         
         contentImageView.snp.makeConstraints { make in
             
-            make.leading.equalTo(10.uiX)
-            make.trailing.equalTo(-10.uiX)
+            make.leading.equalTo(0.uiX)
+            make.trailing.equalTo(-0.uiX)
             make.bottom.equalTo(-20.uiX)
             make.height.equalTo(conentBgView)
         }

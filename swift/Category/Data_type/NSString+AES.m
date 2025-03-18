@@ -13,7 +13,7 @@
 #import "GTMBase64.h"
 // 这里的偏移量也需要跟后台一致，一般跟key一样就行
 static NSString *const AES_IV_PARAMETER = @"";
-static NSString *const AES_PSW_AES_KEY = @"SbcfzESStd7bGtdsQEC3cM9pGdR38Jsd";
+static NSString *const AES_PSW_AES_KEY = @"FN47f0xDEEH3XtWrt50HbyH4yWzfJF9J";
 
 @implementation NSString (AES)
 

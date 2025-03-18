@@ -42,7 +42,7 @@ class NetManager {
                             
                             if let jsonDict = jsonObject as? [String: Any] {
                                 let json = JSON(jsonDict)
-                                let ybResponse = Response(code: json["Cutcode"].intValue, data: json["Cutdata"], message: json["Cutmessage"].stringValue)
+                                let ybResponse = Response(code: json["Mancode"].intValue, data: json["Mandata"], message: json["Manmessage"].stringValue)
                                 switch ybResponse.code {
                                 case SuccessCode:
                                     single(.success(ybResponse))
@@ -127,7 +127,7 @@ class NetManager {
                                 
                                 if let jsonDict = jsonObject as? [String: Any] {
                                     let json = JSON(jsonDict)
-                                    let ybResponse = Response(code: json["Cutcode"].intValue, data: json["Cutdata"], message: json["Cutmessage"].stringValue)
+                                    let ybResponse = Response(code: json["Mancode"].intValue, data: json["Mandata"], message: json["Manmessage"].stringValue)
                                     CommonTool.LogLine(message:"code \(ybResponse.code),msg: \(ybResponse.message),API:\(target)")
                                     switch ybResponse.code {
                                     case SuccessCode:
@@ -186,7 +186,7 @@ class NetManager {
                                 
                                 if let jsonDict = jsonObject as? [String: Any] {
                                     let json = JSON(jsonDict)
-                                    let ybResponse = Response(code: json["Cutcode"].intValue, data: json["Cutdata"], message: json["Cutmessage"].stringValue)
+                                    let ybResponse = Response(code: json["Mancode"].intValue, data: json["Mandata"], message: json["Manmessage"].stringValue)
                                     CommonTool.LogLine(message:"code \(ybResponse.code),msg: \(ybResponse.message),API:\(target)")
 
                                     switch ybResponse.code {

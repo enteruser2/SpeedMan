@@ -64,6 +64,20 @@ NSString *  cocos_callbackId = @"";
 
 }
 
++(void)nativeCallCocosRootEvent:(NSString*)action argument:(NSString*)argument callbackId:(NSString*)callbackId {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString * name = @"window.speedmanroot.nativeCallWaterCocos";
+        std::string funcName = [name UTF8String];
+        std::string actionName = [action UTF8String];
+        std::string param001 = [argument UTF8String];
+        std::string param002 = [callbackId UTF8String];
+        std::string jsCallStr = cc::StringUtils::format("%s(\'%s\',\"%s\");",funcName.c_str(),param001.c_str(),param002.c_str());
+        NSLog(@"CocosHelper----nativeCallCocosRootEvent %@---%@----%@",action,argument,callbackId);
+        se::ScriptEngine::getInstance()->evalString(jsCallStr.c_str());
+    });
+
+}
+
 
 +(void)cocosCallnativeEvent:(NSString*)action argument:(NSString*)argument callbackId:(NSString*)callbackId {
     NSLog(@"CocosHelper----cocosCallnativeEvent %@---%@----%@",action,argument,callbackId);
@@ -160,14 +174,17 @@ NSString *  cocos_callbackId = @"";
 
 +(UIViewController *)getCurrentVC
 {
+
     UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     UIViewController *currentVC = [self getCurrentVCFrom:rootViewController];
+
     return currentVC;
 }
 
 +(UIViewController *)getCurrentVCFrom:(UIViewController *)rootVC
 {
     UIViewController *currentVC;
+
     if ([rootVC presentedViewController]) {
         rootVC = [rootVC presentedViewController];
     }
@@ -177,6 +194,7 @@ NSString *  cocos_callbackId = @"";
     }
     else if ([rootVC isKindOfClass:[UINavigationController class]])
     {
+
         currentVC = [self getCurrentVCFrom:[(UINavigationController *)rootVC visibleViewController]];
     }
     else
