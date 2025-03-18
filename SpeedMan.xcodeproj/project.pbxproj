@@ -18,12 +18,12 @@
 		9A42455F2D67322500EAFAE6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245582D67322500EAFAE6 /* Application.swift */; };
 		9A43E5282D671AE9007245FA /* CocosBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A43E5262D671AE9007245FA /* CocosBridge.m */; };
 		9A7520B32D882F3300150107 /* CocosMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7520B22D882F3300150107 /* CocosMetalView.swift */; };
+		9A92F55F2D896026002D8D14 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9A92F55B2D896026002D8D14 /* src */; };
+		9A92F5602D896026002D8D14 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A92F55C2D896026002D8D14 /* assets */; };
+		9A92F5612D896026002D8D14 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9A92F55D2D896026002D8D14 /* main.js */; };
+		9A92F5622D896026002D8D14 /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9A92F55E2D896026002D8D14 /* jsb-adapter */; };
 		9AB64BD72CE5DA9900249D50 /* FetchAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */; };
 		9AC4FC442D02D4D700992F41 /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4FC432D02D4D700992F41 /* ShareModel.swift */; };
-		9AE80BD72D87C8AA00C1A7D6 /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9AE80BD32D87C8AA00C1A7D6 /* jsb-adapter */; };
-		9AE80BD82D87C8AA00C1A7D6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9AE80BD42D87C8AA00C1A7D6 /* main.js */; };
-		9AE80BD92D87C8AA00C1A7D6 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9AE80BD52D87C8AA00C1A7D6 /* src */; };
-		9AE80BDA2D87C8AA00C1A7D6 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE80BD62D87C8AA00C1A7D6 /* assets */; };
 		D4F87DC7DD7490151C0EB2DA /* Pods_SpeedMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08860A58F7FCB72DA28A086 /* Pods_SpeedMan.framework */; };
 		FE0C80E22BABC0EE0075950B /* AdsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E12BABC0EE0075950B /* AdsSwift.swift */; };
 		FE0C80E62BABC54B0075950B /* BaseRewardVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E42BABC54A0075950B /* BaseRewardVideo.m */; };
@@ -148,14 +148,14 @@
 		9A43E5272D671AE9007245FA /* CocosBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosBridge.h; sourceTree = "<group>"; };
 		9A4985212D154021009E6902 /* exportOptionsAdHoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptionsAdHoc.plist; sourceTree = "<group>"; };
 		9A7520B22D882F3300150107 /* CocosMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocosMetalView.swift; sourceTree = "<group>"; };
+		9A92F55B2D896026002D8D14 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		9A92F55C2D896026002D8D14 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		9A92F55D2D896026002D8D14 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		9A92F55E2D896026002D8D14 /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
 		9AA722A72D891A5600175AFF /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAdModel.swift; sourceTree = "<group>"; };
 		9AC4FC432D02D4D700992F41 /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
 		9AD88D042D0974FB00574DB5 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
-		9AE80BD32D87C8AA00C1A7D6 /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
-		9AE80BD42D87C8AA00C1A7D6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		9AE80BD52D87C8AA00C1A7D6 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
-		9AE80BD62D87C8AA00C1A7D6 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		9AEBC2CA2D6323F900E9576D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9B1D2A32143420CD35531DA1 /* Pods_CrazyBirdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrazyBirdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCC625526DC7927E3200B5C /* Pods-GoodCut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodCut.release.xcconfig"; path = "Target Support Files/Pods-GoodCut/Pods-GoodCut.release.xcconfig"; sourceTree = "<group>"; };
@@ -771,10 +771,10 @@
 		FEEC9A512B29837200AD0A1A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9AE80BD62D87C8AA00C1A7D6 /* assets */,
-				9AE80BD32D87C8AA00C1A7D6 /* jsb-adapter */,
-				9AE80BD42D87C8AA00C1A7D6 /* main.js */,
-				9AE80BD52D87C8AA00C1A7D6 /* src */,
+				9A92F55C2D896026002D8D14 /* assets */,
+				9A92F55E2D896026002D8D14 /* jsb-adapter */,
+				9A92F55D2D896026002D8D14 /* main.js */,
+				9A92F55B2D896026002D8D14 /* src */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -970,19 +970,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE80BDA2D87C8AA00C1A7D6 /* assets in Resources */,
+				9A92F5602D896026002D8D14 /* assets in Resources */,
 				FE3D007C2B216D5700A25670 /* LaunchScreen.storyboard in Resources */,
 				FEDFB2062B2AF69A004210FC /* ReleaseConfig.xcconfig in Resources */,
 				9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */,
+				9A92F55F2D896026002D8D14 /* src in Resources */,
+				9A92F5622D896026002D8D14 /* jsb-adapter in Resources */,
 				FEDFB2042B2AF69A004210FC /* DebugConfig.xcconfig in Resources */,
 				FE24149D2B318D70001288AB /* Arial.ttf in Resources */,
-				9AE80BD92D87C8AA00C1A7D6 /* src in Resources */,
 				FE24149E2B318D70001288AB /* Arial Bold Italic.ttf in Resources */,
 				FE3D00792B216D5700A25670 /* Assets.xcassets in Resources */,
-				9AE80BD82D87C8AA00C1A7D6 /* main.js in Resources */,
 				FE3D00772B216D5500A25670 /* Main.storyboard in Resources */,
-				9AE80BD72D87C8AA00C1A7D6 /* jsb-adapter in Resources */,
 				FE24149C2B318D70001288AB /* Arial Bold.ttf in Resources */,
+				9A92F5612D896026002D8D14 /* main.js in Resources */,
 				FEDFB2052B2AF69A004210FC /* CommonConfig.xcconfig in Resources */,
 				FE24149F2B318D70001288AB /* Arial Italic.ttf in Resources */,
 			);
@@ -1280,7 +1280,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OBJC_INTEROP_MODE = objc;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;

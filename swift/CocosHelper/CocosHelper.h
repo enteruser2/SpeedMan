@@ -42,6 +42,8 @@ extern NSString *  cocos_callbackId;
 
 + (void)loginOut;
 
++ (void)vibrate;
+
 +(NSString *)getRequestHeaderInfo;
 
 +(NSString *) getTranslateInfo;

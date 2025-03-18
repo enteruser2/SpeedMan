@@ -171,6 +171,11 @@ NSString *  cocos_callbackId = @"";
     [CocosSwift loginOut];
 }
 
++ (void)vibrate{
+    NSLog(@"CocosHelper----vibrate");
+    [CocosSwift vibrate];
+}
+
 
 +(UIViewController *)getCurrentVC
 {
