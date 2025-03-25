@@ -84,7 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupPangleSDK() {
         
         let config = PAGConfig.share()
-        config.appID = "8548229";
+        config.appID = "8620098";
         //If you need to display open ads, you should set the app logo image
         config.appLogoImage = UIImage.init(named: "me_about_logoicon")
         //    #if DEBUG
