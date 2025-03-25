@@ -114,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupGoogleAdSDK()
     {
         GADMobileAds.sharedInstance().start(completionHandler:{_ in 
-            CommonTool.LogLine(message: "GADMobileAds success --- \(GADMobileAds.sharedInstance().versionNumber)")
+//            CommonTool.LogLine(message: "GADMobileAds success --- \(GADMobileAds.sharedInstance().versionNumber)")
         })
         
         GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["6c4c589775033eefeda89adc87699473"]
