@@ -11,6 +11,10 @@
 		9A01400A2D06A31B004D85BD /* PrivacyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0140092D06A31B004D85BD /* PrivacyModel.swift */; };
 		9A042DBA2D6703CF00A8C469 /* SDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A042DB62D6703CE00A8C469 /* SDKWrapper.m */; };
 		9A042DBB2D6703CF00A8C469 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A042DB92D6703CF00A8C469 /* Game.cpp */; };
+		9A0CF59E2D92DA5100DE9DC6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9A0CF59A2D92DA5000DE9DC6 /* main.js */; };
+		9A0CF59F2D92DA5100DE9DC6 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0CF59B2D92DA5000DE9DC6 /* assets */; };
+		9A0CF5A02D92DA5100DE9DC6 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9A0CF59C2D92DA5000DE9DC6 /* src */; };
+		9A0CF5A12D92DA5100DE9DC6 /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9A0CF59D2D92DA5000DE9DC6 /* jsb-adapter */; };
 		9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A1161D92D16B07B00552173 /* GoogleService-Info.plist */; };
 		9A4245452D6728B300EAFAE6 /* CocosAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245442D6728B300EAFAE6 /* CocosAppDelegate.m */; };
 		9A42455B2D67322500EAFAE6 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245542D67322500EAFAE6 /* AppDefine.swift */; };
@@ -20,10 +24,6 @@
 		9A7520B32D882F3300150107 /* CocosMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7520B22D882F3300150107 /* CocosMetalView.swift */; };
 		9AB64BD72CE5DA9900249D50 /* FetchAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */; };
 		9AC4FC442D02D4D700992F41 /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4FC432D02D4D700992F41 /* ShareModel.swift */; };
-		9ACDE7212D92B252008AD291 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDE71D2D92B251008AD291 /* src */; };
-		9ACDE7222D92B252008AD291 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDE71E2D92B251008AD291 /* assets */; };
-		9ACDE7232D92B252008AD291 /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDE71F2D92B251008AD291 /* jsb-adapter */; };
-		9ACDE7242D92B252008AD291 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDE7202D92B251008AD291 /* main.js */; };
 		D4F87DC7DD7490151C0EB2DA /* Pods_SpeedMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08860A58F7FCB72DA28A086 /* Pods_SpeedMan.framework */; };
 		FE0C80E22BABC0EE0075950B /* AdsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E12BABC0EE0075950B /* AdsSwift.swift */; };
 		FE0C80E62BABC54B0075950B /* BaseRewardVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E42BABC54A0075950B /* BaseRewardVideo.m */; };
@@ -138,6 +138,10 @@
 		9A042DB62D6703CE00A8C469 /* SDKWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKWrapper.m; sourceTree = "<group>"; };
 		9A042DB82D6703CF00A8C469 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		9A042DB92D6703CF00A8C469 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		9A0CF59A2D92DA5000DE9DC6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		9A0CF59B2D92DA5000DE9DC6 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		9A0CF59C2D92DA5000DE9DC6 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		9A0CF59D2D92DA5000DE9DC6 /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
 		9A1161D92D16B07B00552173 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9A4245432D6728B300EAFAE6 /* CocosAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosAppDelegate.h; sourceTree = "<group>"; };
 		9A4245442D6728B300EAFAE6 /* CocosAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocosAppDelegate.m; sourceTree = "<group>"; };
@@ -151,10 +155,6 @@
 		9AA722A72D891A5600175AFF /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAdModel.swift; sourceTree = "<group>"; };
 		9AC4FC432D02D4D700992F41 /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
-		9ACDE71D2D92B251008AD291 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
-		9ACDE71E2D92B251008AD291 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
-		9ACDE71F2D92B251008AD291 /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
-		9ACDE7202D92B251008AD291 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		9AD88D042D0974FB00574DB5 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
 		9AEBC2CA2D6323F900E9576D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9B1D2A32143420CD35531DA1 /* Pods_CrazyBirdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrazyBirdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -771,10 +771,10 @@
 		FEEC9A512B29837200AD0A1A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9ACDE71E2D92B251008AD291 /* assets */,
-				9ACDE71F2D92B251008AD291 /* jsb-adapter */,
-				9ACDE7202D92B251008AD291 /* main.js */,
-				9ACDE71D2D92B251008AD291 /* src */,
+				9A0CF59B2D92DA5000DE9DC6 /* assets */,
+				9A0CF59D2D92DA5000DE9DC6 /* jsb-adapter */,
+				9A0CF59A2D92DA5000DE9DC6 /* main.js */,
+				9A0CF59C2D92DA5000DE9DC6 /* src */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -970,16 +970,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ACDE7222D92B252008AD291 /* assets in Resources */,
+				9A0CF59F2D92DA5100DE9DC6 /* assets in Resources */,
 				FE3D007C2B216D5700A25670 /* LaunchScreen.storyboard in Resources */,
 				FEDFB2062B2AF69A004210FC /* ReleaseConfig.xcconfig in Resources */,
 				9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */,
-				9ACDE7212D92B252008AD291 /* src in Resources */,
+				9A0CF59E2D92DA5100DE9DC6 /* main.js in Resources */,
+				9A0CF5A12D92DA5100DE9DC6 /* jsb-adapter in Resources */,
+				9A0CF5A02D92DA5100DE9DC6 /* src in Resources */,
 				FEDFB2042B2AF69A004210FC /* DebugConfig.xcconfig in Resources */,
 				FE24149D2B318D70001288AB /* Arial.ttf in Resources */,
 				FE24149E2B318D70001288AB /* Arial Bold Italic.ttf in Resources */,
-				9ACDE7232D92B252008AD291 /* jsb-adapter in Resources */,
-				9ACDE7242D92B252008AD291 /* main.js in Resources */,
 				FE3D00792B216D5700A25670 /* Assets.xcassets in Resources */,
 				FE3D00772B216D5500A25670 /* Main.storyboard in Resources */,
 				FE24149C2B318D70001288AB /* Arial Bold.ttf in Resources */,
