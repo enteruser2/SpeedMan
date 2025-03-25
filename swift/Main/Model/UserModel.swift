@@ -185,6 +185,9 @@ class UserModel : HandyJSON {
 
       //特殊任务见面礼金
      var ManFirstGift: Int64 = 0
+    
+    var ManMoneyItem: String = ""//金钱道具加成
+    var ManGoldItem: String = ""//金币道具加成
 
       //重启时新的砸罐次数
      var ManSmashingCansNewTimes: Int = 0

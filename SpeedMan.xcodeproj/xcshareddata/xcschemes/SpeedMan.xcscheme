@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE3D006B2B216D5500A25670"
-               BuildableName = "GoodCut.app"
-               BlueprintName = "GoodCut"
-               ReferencedContainer = "container:GoodCut.xcodeproj">
+               BuildableName = "SpeedMan.app"
+               BlueprintName = "SpeedMan"
+               ReferencedContainer = "container:SpeedMan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,15 +49,6 @@
             ReferencedContainer = "container:SpeedMan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE3D006B2B216D5500A25670"
-            BuildableName = "GoodCut.app"
-            BlueprintName = "GoodCut"
-            ReferencedContainer = "container:GoodCut.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -70,20 +61,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE3D006B2B216D5500A25670"
-            BuildableName = "GoodCut.app"
-            BlueprintName = "GoodCut"
-            ReferencedContainer = "container:GoodCut.xcodeproj">
+            BuildableName = "SpeedMan.app"
+            BlueprintName = "SpeedMan"
+            ReferencedContainer = "container:SpeedMan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE3D006B2B216D5500A25670"
-            BuildableName = "GoodCut.app"
-            BlueprintName = "GoodCut"
-            ReferencedContainer = "container:GoodCut.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -120,11 +120,11 @@ enum ADSceneType: String {
     {
         switch(type){
         case "1":
-//            let vc = PrivacyViewController()
-//            vc.modalPresentationStyle = .fullScreen
-//            CocosHelper.getCurrentVC().present(vc, animated: true)
+            let vc = PrivacyViewController()
+            vc.modalPresentationStyle = .fullScreen
+            CocosHelper.getCurrentVC().present(vc, animated: true)
 
-            CocosHelper.getCurrentVC().navigationController?.pushViewController(PrivacyViewController(), animated: true)
+//            CocosHelper.getCurrentVC().navigationController?.pushViewController(PrivacyViewController(), animated: true)
         
             break;
         default: break

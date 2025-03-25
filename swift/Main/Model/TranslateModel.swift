@@ -816,6 +816,29 @@ class TranslateModel : HandyJSON {
     var Mant4703: String = ""// 我知道了
 
 
+    var Mant4801: String = ""// 称号
+    var Mant4802: String = ""        //解锁
+    var Mant4803: String = ""        //升级
+    var Mant4804: String = ""        //Max
+    var Mant4811: String = ""// 关卡先锋
+    var Mant4812: String = ""// BOSS克星
+    var Mant4813: String = ""// 寻宝专家
+    var Mant4814: String = ""// 钻石猎手
+    var Mant4815: String = ""// 开箱能手
+    var Mant4816: String = ""// 活跃之星
+    var Mant4821: String = ""// 普通关钻石奖励加%d%(%d%)
+    var Mant4822: String = ""// BOSS关钻石奖励加%d%(%d%)
+    var Mant4823: String = ""// 宝箱关钻石奖励加%d%(%d%)
+    var Mant4824: String = ""// 关卡初始钻石加%d(%d)
+    var Mant4825: String = ""// 钥匙宝箱钻石加%d(%d)
+    var Mant4826: String = ""// 活跃宝箱金币奖励加%d%(%d%)
+    var Mant4831: String = ""// 普通关钻石奖励加%d%
+    var Mant4832: String = ""// BOSS关钻石奖励加%d%
+    var Mant4833: String = ""// 宝箱关钻石奖励加%d%
+    var Mant4834: String = ""// 关卡初始钻石加%d
+    var Mant4835: String = ""// 钥匙宝箱钻石加%d
+    var Mant4836: String = ""// 活跃宝箱金币奖励加%d%
+
 
     // 注销
     

@@ -1,6 +1,6 @@
 //
 //  CocosAppDelegate.h
-//  GoodCut
+//  SpeedMan
 //
 //  Created by macmini on 2025/2/20.
 //
