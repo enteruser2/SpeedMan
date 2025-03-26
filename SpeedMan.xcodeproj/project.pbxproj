@@ -11,11 +11,11 @@
 		9A01400A2D06A31B004D85BD /* PrivacyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0140092D06A31B004D85BD /* PrivacyModel.swift */; };
 		9A042DBA2D6703CF00A8C469 /* SDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A042DB62D6703CE00A8C469 /* SDKWrapper.m */; };
 		9A042DBB2D6703CF00A8C469 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A042DB92D6703CF00A8C469 /* Game.cpp */; };
-		9A0CF59E2D92DA5100DE9DC6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9A0CF59A2D92DA5000DE9DC6 /* main.js */; };
-		9A0CF59F2D92DA5100DE9DC6 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0CF59B2D92DA5000DE9DC6 /* assets */; };
-		9A0CF5A02D92DA5100DE9DC6 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9A0CF59C2D92DA5000DE9DC6 /* src */; };
-		9A0CF5A12D92DA5100DE9DC6 /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9A0CF59D2D92DA5000DE9DC6 /* jsb-adapter */; };
 		9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A1161D92D16B07B00552173 /* GoogleService-Info.plist */; };
+		9A2074A52D93D7ED00FABCFC /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9A2074A12D93D7EC00FABCFC /* src */; };
+		9A2074A62D93D7ED00FABCFC /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2074A22D93D7EC00FABCFC /* assets */; };
+		9A2074A72D93D7ED00FABCFC /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9A2074A32D93D7EC00FABCFC /* jsb-adapter */; };
+		9A2074A82D93D7ED00FABCFC /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9A2074A42D93D7ED00FABCFC /* main.js */; };
 		9A4245452D6728B300EAFAE6 /* CocosAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245442D6728B300EAFAE6 /* CocosAppDelegate.m */; };
 		9A42455B2D67322500EAFAE6 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245542D67322500EAFAE6 /* AppDefine.swift */; };
 		9A42455E2D67322500EAFAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245572D67322500EAFAE6 /* AppDelegate.swift */; };
@@ -138,11 +138,11 @@
 		9A042DB62D6703CE00A8C469 /* SDKWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKWrapper.m; sourceTree = "<group>"; };
 		9A042DB82D6703CF00A8C469 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		9A042DB92D6703CF00A8C469 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
-		9A0CF59A2D92DA5000DE9DC6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		9A0CF59B2D92DA5000DE9DC6 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
-		9A0CF59C2D92DA5000DE9DC6 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
-		9A0CF59D2D92DA5000DE9DC6 /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
 		9A1161D92D16B07B00552173 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9A2074A12D93D7EC00FABCFC /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		9A2074A22D93D7EC00FABCFC /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		9A2074A32D93D7EC00FABCFC /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
+		9A2074A42D93D7ED00FABCFC /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		9A4245432D6728B300EAFAE6 /* CocosAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosAppDelegate.h; sourceTree = "<group>"; };
 		9A4245442D6728B300EAFAE6 /* CocosAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocosAppDelegate.m; sourceTree = "<group>"; };
 		9A4245542D67322500EAFAE6 /* AppDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
@@ -771,10 +771,10 @@
 		FEEC9A512B29837200AD0A1A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9A0CF59B2D92DA5000DE9DC6 /* assets */,
-				9A0CF59D2D92DA5000DE9DC6 /* jsb-adapter */,
-				9A0CF59A2D92DA5000DE9DC6 /* main.js */,
-				9A0CF59C2D92DA5000DE9DC6 /* src */,
+				9A2074A22D93D7EC00FABCFC /* assets */,
+				9A2074A32D93D7EC00FABCFC /* jsb-adapter */,
+				9A2074A42D93D7ED00FABCFC /* main.js */,
+				9A2074A12D93D7EC00FABCFC /* src */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -970,16 +970,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0CF59F2D92DA5100DE9DC6 /* assets in Resources */,
+				9A2074A62D93D7ED00FABCFC /* assets in Resources */,
 				FE3D007C2B216D5700A25670 /* LaunchScreen.storyboard in Resources */,
 				FEDFB2062B2AF69A004210FC /* ReleaseConfig.xcconfig in Resources */,
 				9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */,
-				9A0CF59E2D92DA5100DE9DC6 /* main.js in Resources */,
-				9A0CF5A12D92DA5100DE9DC6 /* jsb-adapter in Resources */,
-				9A0CF5A02D92DA5100DE9DC6 /* src in Resources */,
+				9A2074A52D93D7ED00FABCFC /* src in Resources */,
 				FEDFB2042B2AF69A004210FC /* DebugConfig.xcconfig in Resources */,
 				FE24149D2B318D70001288AB /* Arial.ttf in Resources */,
 				FE24149E2B318D70001288AB /* Arial Bold Italic.ttf in Resources */,
+				9A2074A72D93D7ED00FABCFC /* jsb-adapter in Resources */,
+				9A2074A82D93D7ED00FABCFC /* main.js in Resources */,
 				FE3D00792B216D5700A25670 /* Assets.xcassets in Resources */,
 				FE3D00772B216D5500A25670 /* Main.storyboard in Resources */,
 				FE24149C2B318D70001288AB /* Arial Bold.ttf in Resources */,
