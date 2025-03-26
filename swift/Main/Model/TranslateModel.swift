@@ -883,7 +883,8 @@ class TranslateModel : HandyJSON {
     var Mant10005: String = ""// 退款
     
     var Mant10006: String = ""// 邀请码
-    
+    var Mant10007: String = ""// 升级称号
+
     var Mant10100: String = ""// 平台打款
     // 金币明细
     
