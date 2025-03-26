@@ -426,7 +426,8 @@ class TranslateModel : HandyJSON {
     var Mant1914: String = ""//Mail
     
     var Mant1915: String = ""//Account
-    
+    var Mant1916: String = ""
+
     var Mant1917: String = ""// 网络繁忙
     
     var Mant1918: String = ""// 加速成功
