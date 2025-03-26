@@ -885,7 +885,6 @@ class TranslateModel : HandyJSON {
     var Mant10006: String = ""// 邀请码
     
     var Mant10100: String = ""// 平台打款
-
     // 金币明细
     
     var Mant20001: String = ""// 任务
@@ -903,9 +902,9 @@ class TranslateModel : HandyJSON {
     var Mant20007: String = ""// 提款
     
     var Mant20008: String = ""// 退款
-    
+    var Mant20009: String = ""// 升级称号
     var Mant20100: String = ""// 平台打款
-
+    
     // 存钱罐明细
     
     var Mant30001: String = ""// 活跃
