@@ -70,8 +70,10 @@
 - (void)adDidDismissFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
     NSLog(@"Ad did dismiss full screen content.");
     self.isReward = true;
-    [self closeVideo];
     [self showSuccess];
+    [self rewardIssue];
+    [self closeVideo];
+
 }
 
 - (void)adDidRecordClick:(id<GADFullScreenPresentingAd>)ad
