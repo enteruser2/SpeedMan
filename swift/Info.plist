@@ -11,30 +11,30 @@
 			<string>google</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.526064676326-bl89crin2skl9gfb20kqvlgr2scrb35r</string>
+				<string>com.googleusercontent.apps.347205054411-h2d3urgtgvnkktgfucab5mdum6mect0h</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>fb2480633498807845</string>
+			<string>fb692438096464737</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb2480633498807845</string>
+				<string>fb692438096464737</string>
 			</array>
 		</dict>
 	</array>
 	<key>FacebookAppID</key>
-	<string>2480633498807845</string>
+	<string>692438096464737</string>
 	<key>FacebookClientToken</key>
-	<string>bb7b3ea3a3a77145a8db64a078fa58cd</string>
+	<string>0cf0a013c9e28b3aa6b035f480fdedf5</string>
 	<key>FacebookDisplayName</key>
 	<string>Speed Man</string>
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-4324864093872697~9611057909</string>
+	<string>ca-app-pub-9098455930726820~2441823323</string>
 	<key>GIDClientID</key>
-	<string>526064676326-bl89crin2skl9gfb20kqvlgr2scrb35r.apps.googleusercontent.com</string>
+	<string>347205054411-h2d3urgtgvnkktgfucab5mdum6mect0h.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
