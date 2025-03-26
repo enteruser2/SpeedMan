@@ -180,10 +180,17 @@ enum ADSceneType: String {
     }
     
     @objc static func loginOut(){
+        if(CocosHelper.getCurrentVC() is LaunchViewController)
+        {
+            return
+        }
         UserManager.shared.login.accept((nil, .loginOut))
         UserdefaultManager.shared.userToken = ""
         UserManager.shared.isGameRestart = true
-        Application.shared.configureMainInterface(in: Application.shared.window)
+//        Application.shared.configureMainInterface(in: Application.shared.window)
+        let vc = LaunchViewController()
+        vc.modalPresentationStyle = .fullScreen
+        CocosHelper.getCurrentVC().present(vc, animated: false)
     }
     
     

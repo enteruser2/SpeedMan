@@ -67,7 +67,7 @@ class BaseViewController: UIViewController{
             if user.1 == .loginOut {
                 
                 UserdefaultManager.shared.userToken = ""
-                Application.shared.configureMainInterface(in: Application.shared.window)
+//                Application.shared.configureMainInterface(in: Application.shared.window)
                 self.disposeBag = nil
             }
         }).disposed(by: self.disposeBag!)

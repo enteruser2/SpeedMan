@@ -7,7 +7,13 @@
 
 import Foundation
 import RxSwift
+protocol DeleteAccountDelegate: AnyObject {
+    
+    func DeleteAccountEvent()
+    
+}
 class DeleteAccountTip4: BaseDialogView {
+    var delegate:DeleteAccountDelegate?
     private var loading = DisposeBag()
     fileprivate lazy var okBtn: UIButton = {
         let okBtn = UIButton.init(type: .custom)
@@ -22,7 +28,9 @@ class DeleteAccountTip4: BaseDialogView {
         okBtn.rx.tap.subscribe (onNext:{ _ in
             NetManager.requestObj(.recovery, type: BaseModel.self).asObservable().subscribe(onNext: { _ in
                 self.removeFromSuperview()
-                Application.shared.configureMainInterface(in: Application.shared.window)
+                self.delegate?.DeleteAccountEvent()
+
+//                Application.shared.configureMainInterface(in: Application.shared.window)
             },onError: {error in
                 
             }).disposed(by: self.rx.disposeBag)

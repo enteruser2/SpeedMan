@@ -10,7 +10,11 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class LaunchViewController : BaseViewController,LoginCloseDelegate {
+class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccountDelegate {
+    func DeleteAccountEvent() {
+        self.openViewController()
+    }
+    
     func LoginCloseEvent() {
         self.getuserModel()
     }
@@ -77,6 +81,7 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate {
                 {
                     let dialog = DeleteAccountTip4(frame:CGRectMake(0, 0, UIDevice.screenWidth, UIDevice.screenHeight))
                     dialog.setLogOutAt(logOutAt:LogoutAt,ID: ID)
+                    dialog.delegate = self
                     Application.shared.window.addSubview(dialog)
                 }
                 else
@@ -165,10 +170,18 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate {
             vc.view.contentScaleFactor   = UIScreen.main.scale;
             vc.view.isMultipleTouchEnabled = true;
             CocosBridge.shared().application(Application.shared.application!,didFinishLaunchingWithOptions: Dictionary())
+            
+            CommonTool.LogLine(message: "openViewController：3333333")
+
         }
         else
         {
+            Application.shared.window.addSubview(self.lanchScreenView)
+            self.lanchScreenView.type = 3
             self.dismiss(animated: false)
+            
+            CommonTool.LogLine(message: "openViewController：444444")
+
         }
         
         
