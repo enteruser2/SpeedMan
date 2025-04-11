@@ -68,7 +68,7 @@ jobs:
             	   -exportArchive | xcpretty
 
     - name: Upload IPA
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v1
       with:
         name: SpeedMan.ipa
         path: build/SpeedMan.ipa
