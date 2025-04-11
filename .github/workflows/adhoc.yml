@@ -49,29 +49,7 @@ jobs:
       run: |
         rm -rf ~/Library/Developer/Xcode/DerivedData/*
 
-    - name: Build the app
-      run: |
-        xcodebuild -workspace SpeedMan.xcworkspace \
-                   -scheme SpeedMan \
-                   -sdk iphoneos \
-                   -configuration AdHoc \
-                   -archivePath $PWD/build/SpeedMan.xcarchive \
-                   -destination 'generic/platform=iOS' \
-                   clean archive | xcpretty
 
-    - name: Export IPA
-      run: |
-        xcodebuild -archivePath $PWD/build/SpeedMan.xcarchive \
-                   -exportOptionsPlist exportOptionsAdHoc.plist \
-                   -exportPath $PWD/build \
-           	   -allowProvisioningUpdates \
-            	   -exportArchive | xcpretty
-
-    - name: Upload IPA
-      uses: actions/upload-artifact@v3
-      with:
-        name: SpeedMan.ipa
-        path: build/SpeedMan.ipa
 
 
 
