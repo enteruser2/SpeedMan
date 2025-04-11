@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>347205054411-h2d3urgtgvnkktgfucab5mdum6mect0h.apps.googleusercontent.com</string>
+	<string>347205054411-8tdbhv19d4f70b7l5b4b28gi11aarh5l.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.347205054411-h2d3urgtgvnkktgfucab5mdum6mect0h</string>
+	<string>com.googleusercontent.apps.347205054411-8tdbhv19d4f70b7l5b4b28gi11aarh5l</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCZOjJxIhEgq1IMGUxD3hPiSFGjhzkNo74</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.speedman.ios</string>
+	<string>com.speedman.go</string>
 	<key>PROJECT_ID</key>
 	<string>speedman-ios</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:347205054411:ios:3a275a6ed4fb33942f504e</string>
+	<string>1:347205054411:ios:272daf2024b72cf02f504e</string>
 </dict>
 </plist>

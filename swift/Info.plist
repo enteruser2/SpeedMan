@@ -11,7 +11,7 @@
 			<string>google</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.347205054411-h2d3urgtgvnkktgfucab5mdum6mect0h</string>
+				<string>com.googleusercontent.apps.347205054411-8tdbhv19d4f70b7l5b4b28gi11aarh5l</string>
 			</array>
 		</dict>
 		<dict>
@@ -34,7 +34,7 @@
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9098455930726820~2441823323</string>
 	<key>GIDClientID</key>
-	<string>347205054411-h2d3urgtgvnkktgfucab5mdum6mect0h.apps.googleusercontent.com</string>
+	<string>347205054411-8tdbhv19d4f70b7l5b4b28gi11aarh5l.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
