@@ -13,7 +13,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.speedman.go</key>
-		<string>ProvisioningProfileSpeedMan_AdHoc</string>
+		<string>ProvisioningProfileSpeedMan_AdHoc1</string>
 	</dict>
 </dict>
 </plist>
