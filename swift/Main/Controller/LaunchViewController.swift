@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
-
+import AppLovinSDK
 class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccountDelegate {
     func DeleteAccountEvent() {
         self.openViewController()
@@ -125,7 +125,7 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccount
         
         UserManager.shared.loginUser().asObservable().subscribe(onNext: { uiserModel in
             CommonTool.LogLine(message: "uiserModel ： \(String(describing: uiserModel?.toJSONString()))")
-            
+            ALSdk.shared().settings.userIdentifier = String(describing:uiserModel?.homeId)
             self.openViewController()
             
         }, onError: {error in

@@ -92,7 +92,7 @@
 
     self.defaultsId = @"e0ae9f85aff57d1f";
     self.defaultsAdType = @"3";
-    
+
     NSString * adID   = self.defaultsId;
     NSString * adType = self.defaultsAdType;
     

@@ -108,7 +108,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Start loading ads
             CommonTool.LogLine(message: "ALSdk success \(sdkConfig)")
         }
-    
+        
     }
     
     func setupGoogleAdSDK()
@@ -117,7 +117,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            CommonTool.LogLine(message: "GADMobileAds success --- \(GADMobileAds.sharedInstance().versionNumber)")
         })
         
-        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["6c4c589775033eefeda89adc87699473"]
+//        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["6c4c589775033eefeda89adc87699473"]
 
         // 如果您要针对 iOS 14 或更高版本进行构建，Meta Audience Network 会要求您使用以下代码明确设置其“已启用广告跟踪”标志：
         FBAdSettings.setAdvertiserTrackingEnabled(true)

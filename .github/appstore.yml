@@ -25,18 +25,18 @@ jobs:
 
     - name: Decode provisioning profile
       run: |
-        echo "${{ secrets.PROVISIONING_PROFILE_COLORLAB_ADHOC }}" | base64 --decode > ProvisioningProfileColorLab_AdHoc.mobileprovision
+        echo "${{ secrets.PROVISIONING_PROFILE_SPEEDMAN_APPSTORE }}" | base64 --decode > ProvisioningProfileSpeedMan_AppStore.mobileprovision
         mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-        cp ProvisioningProfileColorLab_AdHoc.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
+        cp ProvisioningProfileSpeedMan_AppStore.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
 
     - name: Decode certificate
       run: |
-        echo "${{ secrets.CERTIFICATE }}" | base64 --decode > ColorLab_Des.p12
+        echo "${{ secrets.CERTIFICATE }}" | base64 --decode > SpeedMan_Des.p12
 
     - name: Create and unlock keychain
       run: |
         security create-keychain -p "" build.keychain
-        security import ColorLab_Des.p12 -k build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
+        security import SpeedMan_Des.p12 -k build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
         security default-keychain -s build.keychain
         security unlock-keychain -p "" build.keychain
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
@@ -51,27 +51,26 @@ jobs:
 
     - name: Build the app
       run: |
-        xcodebuild -workspace ColorLab.xcworkspace \
-                   -scheme ColorLab \
+        xcodebuild -workspace SpeedMan.xcworkspace \
+                   -scheme SpeedMan \
                    -sdk iphoneos \
-                   -configuration AdHoc \
-                   -archivePath $PWD/build/ColorLab.xcarchive \
+                   -configuration Release \
+                   -archivePath $PWD/build/SpeedMan.xcarchive \
                    -destination 'generic/platform=iOS' \
                    clean archive | xcpretty
 
     - name: Export IPA
       run: |
-        xcodebuild -archivePath $PWD/build/ColorLab.xcarchive \
-                   -exportOptionsPlist exportOptionsAdHoc.plist \
+        xcodebuild -archivePath $PWD/build/SpeedMan.xcarchive \
+                   -exportOptionsPlist exportOptions.plist \
                    -exportPath $PWD/build \
            	   -allowProvisioningUpdates \
             	   -exportArchive | xcpretty
 
-    - name: Upload IPA
-      uses: actions/upload-artifact@v3
-      with:
-        name: ColorLab.ipa
-        path: build/ColorLab.ipa
+    - name: Upload IPA to App Store
+      run: |
+        xcrun altool --upload-app --type iOS -f $PWD/build/SpeedMan.ipa -u "${{ secrets.APP_STORE_USERNAME }}" -p "${{ secrets.APP_STORE_PASSWORD }}" --output-format xml
+
 
 
 
