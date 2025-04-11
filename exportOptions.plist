@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>timeID</key>
-	<string>4N8T8VC53G</string>
+	<string>27HW9K4T64</string>
 	<key>method</key>
 	<string>app-store</string>
 	<key>uploadBitcode</key>
@@ -12,8 +12,8 @@
 	<true/>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.colorlab.iosapp</key>
-		<string>ProvisioningProfileColorLab_AppStore</string>
+		<key>com.speedman.go</key>
+		<string>ProvisioningProfileSpeedMan_AppStore</string>
 	</dict>
 </dict>
 </plist>
