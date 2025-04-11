@@ -1361,11 +1361,11 @@
 				COCOAPODS_PARALLEL_CODE_SIGN = true;
 				CODE_SIGN_ENTITLEMENTS = swift/swift.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DDGNDSD6WU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1521,7 +1521,7 @@
 					"\"$(SRCROOT)/native/external/sources/boost-source\"",
 				);
 				INFOPLIST_FILE = swift/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man";
+				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man GO";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the app to access your camera";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow the app to save images to the album";
@@ -1638,7 +1638,7 @@
 					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.colorlab.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedman.go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1671,11 +1671,11 @@
 				COCOAPODS_PARALLEL_CODE_SIGN = true;
 				CODE_SIGN_ENTITLEMENTS = swift/swift.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DDGNDSD6WU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1831,7 +1831,7 @@
 					"\"$(SRCROOT)/native/external/sources/boost-source\"",
 				);
 				INFOPLIST_FILE = swift/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man";
+				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man GO";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the app to access your camera";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow the app to save images to the album";
@@ -1956,7 +1956,7 @@
 					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.colorlab.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedman.go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
