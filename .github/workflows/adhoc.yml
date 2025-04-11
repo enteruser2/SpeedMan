@@ -25,9 +25,9 @@ jobs:
 
     - name: Decode provisioning profile
       run: |
-        echo "${{ secrets.PROVISIONING_PROFILE_SPEEDMAN_ADHOC }}" | base64 --decode > ProvisioningProfileSpeedMan_AdHoc1.mobileprovision
+        echo "${{ secrets.PROVISIONING_PROFILE_SPEEDMAN_ADHOC }}" | base64 --decode > ProvisioningProfileSpeedMan_AdHoc.mobileprovision
         mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-        cp ProvisioningProfileSpeedMan_AdHoc1.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
+        cp ProvisioningProfileSpeedMan_AdHoc.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
 
     - name: Decode certificate
       run: |
