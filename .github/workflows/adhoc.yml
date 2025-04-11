@@ -67,8 +67,8 @@ jobs:
            	   -allowProvisioningUpdates \
             	   -exportArchive
 
-      - name: Upload IPA
-        uses: actions/upload-artifact@v4
-        with:
-          name: SpeedMan.ipa
-          path: build/SpeedMan.ipa
+    - name: Upload IPA
+      uses: actions/upload-artifact@v4
+      with:
+        name: SpeedMan.ipa
+        path: build/SpeedMan.ipa
