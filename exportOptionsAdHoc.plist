@@ -7,7 +7,7 @@
 	<key>method</key>
 	<string>ad-hoc</string>
 	<key>uploadBitcode</key>
-	<true/>
+	<false/>
 	<key>uploadSymbols</key>
 	<true/>
 	<key>provisioningProfiles</key>

@@ -66,7 +66,7 @@ jobs:
                    -exportOptionsPlist exportOptionsAdHoc.plist \
                    -exportPath $PWD/build \
            	   -allowProvisioningUpdates \
-            	   -exportArchive | xcpretty
+            	   -exportArchive 2>&1  # 显示完整日志 
 
     - name: Upload IPA
       uses: actions/upload-artifact@v4
