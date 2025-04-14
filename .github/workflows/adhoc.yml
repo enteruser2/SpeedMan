@@ -37,7 +37,7 @@ jobs:
 
       - name: Install CocoaPods
         run: |
-          pod install --repo-update
+          pod install
 
       - name: Clean Xcode Derived Data
         run: |
@@ -51,7 +51,6 @@ jobs:
                      -configuration AdHoc \
                      -archivePath $PWD/build/SpeedMan.xcarchive \
                      -destination 'generic/platform=iOS' \
-                     CODE_SIGNING_ALLOWED=NO \
                      clean archive
 
       - name: Export IPA
