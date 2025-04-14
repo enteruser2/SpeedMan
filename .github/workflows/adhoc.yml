@@ -10,56 +10,78 @@ jobs:
     name: Deploying
     runs-on: macos-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up Xcode version
-      run: |
-         sudo xcode-select -s /Applications/Xcode_15.2.app
+      - name: Set up Xcode version
+        run: |
+          sudo xcode-select -s /Applications/Xcode_15.2.app/Contents/Developer
 
-    - name: Set libarclite_iphoneos
-      run: |
-        mkdir -p /Applications/Xcode_15.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/
-        cp libarclite_iphoneos.a /Applications/Xcode_15.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/
-        ls /Applications/Xcode_15.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/
+      - name: Decode provisioning profile
+        run: |
+          echo "${{ secrets.PROVISIONING_PROFILE_SPEEDMAN_ADHOC }}" | base64 --decode > ProvisioningProfileSpeedMan_AdHoc.mobileprovision
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp ProvisioningProfileSpeedMan_AdHoc.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
 
-    - name: Decode provisioning profile
-      run: |
-        echo "${{ secrets.PROVISIONING_PROFILE_SPEEDMAN_ADHOC }}" | base64 --decode > ProvisioningProfileSpeedMan_AdHoc.mobileprovision
-        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-        cp ProvisioningProfileSpeedMan_AdHoc.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
+      - name: Decode certificate
+        run: |
+          echo "${{ secrets.CERTIFICATE }}" | base64 --decode > SpeedMan_Des.p12
 
-    - name: Decode certificate
-      run: |
-        echo "${{ secrets.CERTIFICATE }}" | base64 --decode > SpeedMan_Des.p12
+      - name: Create and unlock keychain
+        run: |
+          security create-keychain -p "" build.keychain
+          security import SpeedMan_Des.p12 -k build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
+          security default-keychain -s build.keychain
+          security unlock-keychain -p "" build.keychain
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
 
-    - name: Create and unlock keychain
-      run: |
-        security create-keychain -p "" build.keychain
-        security import SpeedMan_Des.p12 -k build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
-        security default-keychain -s build.keychain
-        security unlock-keychain -p "" build.keychain
-        security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
+      - name: Install CocoaPods
+        run: |
+          pod install --repo-update
 
-    - name: Install CocoaPods
-      run: |
-        pod install
+      - name: Clean Xcode Derived Data
+        run: |
+          rm -rf ~/Library/Developer/Xcode/DerivedData/*
 
-    - name: Clean Xcode Derived Data
-      run: |
-        rm -rf ~/Library/Developer/Xcode/DerivedData/*
+      - name: Build Archive
+        run: |
+          xcodebuild -workspace SpeedMan.xcworkspace \
+                     -scheme SpeedMan \
+                     -sdk iphoneos \
+                     -configuration AdHoc \
+                     -archivePath $PWD/build/SpeedMan.xcarchive \
+                     -destination 'generic/platform=iOS' \
+                     CODE_SIGNING_ALLOWED=NO \
+                     clean archive
 
-    - name: Build the app
-      run: |
-        xcodebuild -workspace SpeedMan.xcworkspace \
-                   -scheme SpeedMan \
-                   -sdk iphoneos \
-                   -configuration AdHoc \
-                   -archivePath $PWD/build/SpeedMan.xcarchive \
-                   -destination 'generic/platform=iOS' \
-                   clean archive | xcpretty
-        xcodebuild -exportArchive \
-                   -archivePath $PWD/build/SpeedMan.xcarchive \
-                   -exportOptionsPlist exportOptionsAdHoc.plist \
-                   -exportPath $PWD/build
+      - name: Export IPA
+        run: |
+          timeout 300 xcodebuild -exportArchive \
+                     -archivePath $PWD/build/SpeedMan.xcarchive \
+                     -exportOptionsPlist $PWD/exportOptionsAdHoc.plist \
+                     -exportPath $PWD/build \
+                     -allowProvisioningUpdates \
+                     CODE_SIGN_IDENTITY="iPhone Distribution" \
+                     || exit 1
 
+      - name: Check IPA Exists
+        run: |
+          if [ -f "build/SpeedMan.ipa" ]; then
+            echo "IPA 生成成功"
+          else
+            echo "错误：未找到 IPA 文件！"
+            exit 1
+          fi
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: SpeedMan.ipa
+          path: build/SpeedMan.ipa
+
+      - name: Upload Distribution Logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcdistributionlogs
+          path: /var/folders/**/*.xcdistributionlogs
