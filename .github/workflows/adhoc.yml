@@ -64,9 +64,3 @@ jobs:
                    -exportOptionsPlist exportOptionsAdHoc.plist \
                    -exportPath $PWD/build
 
-
-    - name: Upload IPA
-      uses: actions/upload-artifact@v4
-      with:
-        name: SpeedMan.ipa
-        path: build/SpeedMan.ipa
