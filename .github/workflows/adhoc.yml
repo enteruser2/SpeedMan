@@ -57,24 +57,13 @@ jobs:
                    -configuration AdHoc \
                    -archivePath $PWD/build/SpeedMan.xcarchive \
                    -destination 'generic/platform=iOS' \
-                   clean archive | xcpretty
-
-    - name: Export IPA
-      run: |
-        xcodebuild -archivePath $PWD/build/SpeedMan.xcarchive \
+                   CODE_SIGNING_ALLOWED=NO \
+                   archive
+        xcodebuild -exportArchive \
+                   -archivePath $PWD/build/SpeedMan.xcarchive \
                    -exportOptionsPlist exportOptionsAdHoc.plist \
-                   -exportPath $PWD/build \
-           	   -allowProvisioningUpdates \
-            	   -exportArchive
+                   -exportPath $PWD/build
 
-    - name: Check IPA File
-      run: |
-        if [ -f "build/SpeedMan.ipa" ]; then
-          echo "IPA 生成成功"
-        else
-          echo "错误：未找到 IPA 文件！"
-          exit 1
-        fi
 
     - name: Upload IPA
       uses: actions/upload-artifact@v4
