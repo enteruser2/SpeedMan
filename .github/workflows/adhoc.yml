@@ -57,10 +57,18 @@ jobs:
                    -configuration AdHoc \
                    -archivePath $PWD/build/SpeedMan.xcarchive \
                    -destination 'generic/platform=iOS' \
-                   CODE_SIGNING_ALLOWED=NO \
-                   archive
-        xcodebuild -exportArchive \
-                   -archivePath $PWD/build/SpeedMan.xcarchive \
-                   -exportOptionsPlist exportOptionsAdHoc.plist \
-                   -exportPath $PWD/build
+                   clean archive
 
+    - name: Export IPA
+      run: |
+        xcodebuild -archivePath $PWD/build/SpeedMan.xcarchive \
+                   -exportOptionsPlist exportOptionsAdHoc.plist \
+                   -exportPath $PWD/build \
+           	   -allowProvisioningUpdates \
+            	   -exportArchive
+
+    - name: Upload IPA
+      uses: actions/upload-artifact@v4
+      with:
+        name: SpeedMan.ipa
+        path: build/SpeedMan.ipa
