@@ -90,7 +90,7 @@
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:key];
     [[NSUserDefaults standardUserDefaults] synchronize];
 
-    self.defaultsId = @"e0ae9f85aff57d1f";
+    self.defaultsId = @"9e02a6064152aa3d";
     self.defaultsAdType = @"3";
 
     NSString * adID   = self.defaultsId;

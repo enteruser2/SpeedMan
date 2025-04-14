@@ -99,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupMaxSDK() {
-        let initConfig = ALSdkInitializationConfiguration(sdkKey: "9u6eOigitS0Zten9IkXPybXnEfHQi2HVI2a4JDngKHTeHwDMPFCVksWdZ_3SUITJqrwTPvWmmFhO83uvJBHkaR") { builder in
+        let initConfig = ALSdkInitializationConfiguration(sdkKey: "yHbDNcXWf0Qk7R72JSEeCg4yszQDioOGQVpqcmTi6MBxVcVZEkdfNAulCOAIBqu14NCmSHGXW2gTBearo7TOxy") { builder in
             builder.mediationProvider = ALMediationProviderMAX
         }
         

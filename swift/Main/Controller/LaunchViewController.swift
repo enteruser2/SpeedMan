@@ -12,7 +12,7 @@ import RxCocoa
 import AppLovinSDK
 class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccountDelegate {
     func DeleteAccountEvent() {
-        self.openViewController()
+        self.getuserModel()
     }
     
     func LoginCloseEvent() {
@@ -92,7 +92,7 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccount
                         let loginView = LoginView(frame:CGRectMake(0, 0, UIDevice.screenWidth, UIDevice.screenHeight))
                         loginView.closeBtn.isHidden = false
                         loginView.delegate = self
-                        self.lanchScreenView.addSubview(loginView)
+                        Application.shared.window.addSubview(loginView)
                     }
                     else
                     {

@@ -36,7 +36,14 @@ PODS:
   - AppLovinMediationUnityAdsAdapter (4.10.0.0):
     - AppLovinSDK
     - UnityAds (= 4.10.0)
+  - AppLovinMediationVerveAdapter (3.0.4.0):
+    - AppLovinSDK
+    - HyBid (= 3.0.4)
+  - AppLovinMediationVungleAdapter (7.4.1.0):
+    - AppLovinSDK
+    - VungleAds (= 7.4.1)
   - AppLovinSDK (12.4.2)
+  - ATOM-Standalone (3.2.2)
   - BURelyFoundation_Global/AFNetworking (0.2.1.4)
   - BURelyFoundation_Global/APM (0.2.1.4)
   - BURelyFoundation_Global/Foundation (0.2.1.4):
@@ -193,6 +200,25 @@ PODS:
   - HandyJSON (5.0.2)
   - HBDNavigationBar (1.7.7)
   - Hue (5.0.0)
+  - HyBid (3.0.4):
+    - HyBid/ATOM (= 3.0.4)
+    - HyBid/Banner (= 3.0.4)
+    - HyBid/Core (= 3.0.4)
+    - HyBid/FullScreen (= 3.0.4)
+    - HyBid/Native (= 3.0.4)
+    - HyBid/RewardedVideo (= 3.0.4)
+  - HyBid/ATOM (3.0.4):
+    - ATOM-Standalone (~> 3.2.1)
+    - HyBid/Core (= 3.0.4)
+  - HyBid/Banner (3.0.4):
+    - HyBid/Core
+  - HyBid/Core (3.0.4)
+  - HyBid/FullScreen (3.0.4):
+    - HyBid/Core
+  - HyBid/Native (3.0.4):
+    - HyBid/Core
+  - HyBid/RewardedVideo (3.0.4):
+    - HyBid/Core
   - JSONModel (1.2.0)
   - MBProgressHUD (1.2.0)
   - MintegralAdSDK (7.6.2):
@@ -299,6 +325,7 @@ PODS:
   - SwiftyJSON (5.0.2)
   - Toast-Swift (5.1.1)
   - UnityAds (4.10.0)
+  - VungleAds (7.4.1)
 
 DEPENDENCIES:
   - Ads-Global (~> 5.8.0.8)
@@ -306,6 +333,8 @@ DEPENDENCIES:
   - AppLovinMediationFacebookAdapter (~> 6.15.0.0)
   - AppLovinMediationMintegralAdapter (~> 7.6.2.0)
   - AppLovinMediationUnityAdsAdapter (~> 4.10.0.0)
+  - AppLovinMediationVerveAdapter
+  - AppLovinMediationVungleAdapter
   - AppLovinSDK (~> 12.4.1)
   - FBSDKLoginKit (~> 17.0.1)
   - FBSDKShareKit (~> 17.0.1)
@@ -341,7 +370,10 @@ SPEC REPOS:
     - AppLovinMediationFacebookAdapter
     - AppLovinMediationMintegralAdapter
     - AppLovinMediationUnityAdsAdapter
+    - AppLovinMediationVerveAdapter
+    - AppLovinMediationVungleAdapter
     - AppLovinSDK
+    - ATOM-Standalone
     - BURelyFoundation_Global
     - Differentiator
     - FBAEMKit
@@ -370,6 +402,7 @@ SPEC REPOS:
     - HandyJSON
     - HBDNavigationBar
     - Hue
+    - HyBid
     - JSONModel
     - MBProgressHUD
     - MintegralAdSDK
@@ -389,6 +422,7 @@ SPEC REPOS:
     - SwiftyJSON
     - Toast-Swift
     - UnityAds
+    - VungleAds
 
 SPEC CHECKSUMS:
   Ads-Global: b2f2943acdeedeae08aa9dce19706e1edbbd5442
@@ -399,7 +433,10 @@ SPEC CHECKSUMS:
   AppLovinMediationFacebookAdapter: 30ddfcb09c1c9ff6778ba974f58e8f3204e6eebc
   AppLovinMediationMintegralAdapter: fdafed44fa0b160cda17a923389f96b6c1169a05
   AppLovinMediationUnityAdsAdapter: d6d5bf488adce05684bf00e0845af49a96a1aadd
+  AppLovinMediationVerveAdapter: 5e4e73cf2a258cdbde48f558c4b72ee096c98ce9
+  AppLovinMediationVungleAdapter: 7f092e3527007637dfb90ba816aa6d96e208d319
   AppLovinSDK: 0d28d095238ec35cf1dc408ca2d983fb7a1803bb
+  ATOM-Standalone: 2c3e1010209490734abc8a72ba84d9d08b82c5d1
   BURelyFoundation_Global: 17ed9cd58d138feefd8c0711dd3294766adcb28e
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   FBAEMKit: 9900b2edd99a2d21629a6277e6166f14c6215799
@@ -428,6 +465,7 @@ SPEC CHECKSUMS:
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   HBDNavigationBar: 6ba38b99637039c831ce460364d5398f29fa0685
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  HyBid: f74c6efa187694778c93963560096c2b33c861e1
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MintegralAdSDK: 0f9b41d7d49d0e90cbe27cdcb62fc1208e25e85d
@@ -447,7 +485,8 @@ SPEC CHECKSUMS:
   SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
   Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
   UnityAds: 5601f6397b0e02ed3ed6ee92827f5177a523aab6
+  VungleAds: 97140121d0b909891eb217d1c102a194601da607
 
-PODFILE CHECKSUM: c2e7bd72fcc31e53c53f7ada4356d40574be6bcf
+PODFILE CHECKSUM: ffda000080a4b4c0994f667026752cbddd3c6762
 
 COCOAPODS: 1.16.2

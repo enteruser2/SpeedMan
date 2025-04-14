@@ -82,9 +82,3 @@ jobs:
        name: SpeedMan.ipa
        path: build/SpeedMan.ipa
 
-    - name: Upload Distribution Logs
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-       name: xcdistributionlogs
-       path: /var/folders/**/*.xcdistributionlogs
