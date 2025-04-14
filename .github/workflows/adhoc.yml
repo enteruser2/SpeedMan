@@ -57,7 +57,8 @@ jobs:
                    -configuration AdHoc \
                    -archivePath $PWD/build/SpeedMan.xcarchive \
                    -destination 'generic/platform=iOS' \
-                   clean archive
+                   CODE_SIGNING_ALLOWED=NO \
+                   archive
         xcodebuild -exportArchive \
                    -archivePath $PWD/build/SpeedMan.xcarchive \
                    -exportOptionsPlist exportOptionsAdHoc.plist \
