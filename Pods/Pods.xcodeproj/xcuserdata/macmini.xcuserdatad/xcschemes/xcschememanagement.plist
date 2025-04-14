@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Ads-Global.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Alamofire-Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -35,11 +30,6 @@
 			<false/>
 		</dict>
 		<key>AppCheckCore.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AppLovinMediationByteDanceAdapter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -70,11 +60,6 @@
 			<false/>
 		</dict>
 		<key>AppLovinSDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>BURelyFoundation_Global.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

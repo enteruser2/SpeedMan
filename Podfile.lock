@@ -1,17 +1,4 @@
 PODS:
-  - Ads-Global (5.8.0.8):
-    - Ads-Global/BUAdSDK (= 5.8.0.8)
-  - Ads-Global/BUAdSDK (5.8.0.8):
-    - Ads-Global/BURelyAdSDK
-    - Ads-Global/Dep_Accurate
-  - Ads-Global/BUAdSDK_Compatible (5.8.0.8):
-    - Ads-Global/BURelyAdSDK
-    - Ads-Global/Dep_Compatible
-  - Ads-Global/BURelyAdSDK (5.8.0.8)
-  - Ads-Global/Dep_Accurate (5.8.0.8):
-    - BURelyFoundation_Global/Pangle (= 0.2.1.4)
-  - Ads-Global/Dep_Compatible (5.8.0.8):
-    - BURelyFoundation_Global/Pangle (~> 0.2.1.4)
   - Alamofire (5.10.1)
   - AppAuth (1.7.5):
     - AppAuth/Core (= 1.7.5)
@@ -23,9 +10,6 @@ PODS:
     - GoogleUtilities/Environment (~> 8.0)
     - GoogleUtilities/UserDefaults (~> 8.0)
     - PromisesObjC (~> 2.4)
-  - AppLovinMediationByteDanceAdapter (5.8.0.8.1):
-    - Ads-Global/BUAdSDK_Compatible (= 5.8.0.8)
-    - AppLovinSDK
   - AppLovinMediationFacebookAdapter (6.15.0.0):
     - AppLovinSDK
     - FBAudienceNetwork (= 6.15.0)
@@ -44,34 +28,6 @@ PODS:
     - VungleAds (= 7.4.1)
   - AppLovinSDK (12.4.2)
   - ATOM-Standalone (3.2.2)
-  - BURelyFoundation_Global/AFNetworking (0.2.1.4)
-  - BURelyFoundation_Global/APM (0.2.1.4)
-  - BURelyFoundation_Global/Foundation (0.2.1.4):
-    - BURelyFoundation_Global/NETWork
-  - BURelyFoundation_Global/Gecko (0.2.1.4):
-    - BURelyFoundation_Global/Foundation
-  - BURelyFoundation_Global/Header (0.2.1.4)
-  - BURelyFoundation_Global/NETWork (0.2.1.4):
-    - BURelyFoundation_Global/AFNetworking
-  - BURelyFoundation_Global/Pangle (0.2.1.4):
-    - BURelyFoundation_Global/AFNetworking
-    - BURelyFoundation_Global/APM
-    - BURelyFoundation_Global/Foundation
-    - BURelyFoundation_Global/Gecko
-    - BURelyFoundation_Global/Header
-    - BURelyFoundation_Global/NETWork
-    - BURelyFoundation_Global/SDWebImage
-    - BURelyFoundation_Global/YYModel
-    - BURelyFoundation_Global/ZFPlayer
-    - BURelyFoundation_Global/Zip
-  - BURelyFoundation_Global/SDWebImage (0.2.1.4):
-    - BURelyFoundation_Global/Foundation
-  - BURelyFoundation_Global/YYModel (0.2.1.4)
-  - BURelyFoundation_Global/ZFPlayer (0.2.1.4):
-    - BURelyFoundation_Global/Foundation
-    - BURelyFoundation_Global/Zip
-  - BURelyFoundation_Global/Zip (0.2.1.4):
-    - BURelyFoundation_Global/Foundation
   - Differentiator (5.0.0)
   - FBAEMKit (17.0.3):
     - FBSDKCoreKit_Basics (= 17.0.3)
@@ -328,8 +284,6 @@ PODS:
   - VungleAds (7.4.1)
 
 DEPENDENCIES:
-  - Ads-Global (~> 5.8.0.8)
-  - AppLovinMediationByteDanceAdapter (~> 5.8.0.8)
   - AppLovinMediationFacebookAdapter (~> 6.15.0.0)
   - AppLovinMediationMintegralAdapter (~> 7.6.2.0)
   - AppLovinMediationUnityAdsAdapter (~> 4.10.0.0)
@@ -362,11 +316,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Ads-Global
     - Alamofire
     - AppAuth
     - AppCheckCore
-    - AppLovinMediationByteDanceAdapter
     - AppLovinMediationFacebookAdapter
     - AppLovinMediationMintegralAdapter
     - AppLovinMediationUnityAdsAdapter
@@ -374,7 +326,6 @@ SPEC REPOS:
     - AppLovinMediationVungleAdapter
     - AppLovinSDK
     - ATOM-Standalone
-    - BURelyFoundation_Global
     - Differentiator
     - FBAEMKit
     - FBAudienceNetwork
@@ -425,11 +376,9 @@ SPEC REPOS:
     - VungleAds
 
 SPEC CHECKSUMS:
-  Ads-Global: b2f2943acdeedeae08aa9dce19706e1edbbd5442
   Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
   AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
   AppCheckCore: cc8fd0a3a230ddd401f326489c99990b013f0c4f
-  AppLovinMediationByteDanceAdapter: 27b8be075f7371bf2fd4637c4ee40debfb9ab4d8
   AppLovinMediationFacebookAdapter: 30ddfcb09c1c9ff6778ba974f58e8f3204e6eebc
   AppLovinMediationMintegralAdapter: fdafed44fa0b160cda17a923389f96b6c1169a05
   AppLovinMediationUnityAdsAdapter: d6d5bf488adce05684bf00e0845af49a96a1aadd
@@ -437,7 +386,6 @@ SPEC CHECKSUMS:
   AppLovinMediationVungleAdapter: 7f092e3527007637dfb90ba816aa6d96e208d319
   AppLovinSDK: 0d28d095238ec35cf1dc408ca2d983fb7a1803bb
   ATOM-Standalone: 2c3e1010209490734abc8a72ba84d9d08b82c5d1
-  BURelyFoundation_Global: 17ed9cd58d138feefd8c0711dd3294766adcb28e
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   FBAEMKit: 9900b2edd99a2d21629a6277e6166f14c6215799
   FBAudienceNetwork: 80a035aa69cc3a71c99e44cb5c2874e4cef9909f
@@ -487,6 +435,6 @@ SPEC CHECKSUMS:
   UnityAds: 5601f6397b0e02ed3ed6ee92827f5177a523aab6
   VungleAds: 97140121d0b909891eb217d1c102a194601da607
 
-PODFILE CHECKSUM: ffda000080a4b4c0994f667026752cbddd3c6762
+PODFILE CHECKSUM: 43e0e5fd967c1c1608c0aa2581f0384bba44f280
 
 COCOAPODS: 1.16.2
