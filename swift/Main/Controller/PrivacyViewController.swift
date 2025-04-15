@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import AppLovinSDK
+
 class PrivacyViewController:WebViewController  {
     
     lazy var titleBgView: UIView = {
@@ -63,6 +65,9 @@ class PrivacyViewController:WebViewController  {
         },onError: {error in
             
         }).disposed(by: self.rx.disposeBag)
+        
+        ALSdk.shared().showMediationDebugger()
+
         
     }
     

@@ -122,5 +122,19 @@ class UserdefaultManager: NSObject {
             UserDefaults.standard.synchronize()
         }
     }
+    
+    var loginStatus:Int{
+        get{
+            if let Status = UserDefaults.standard.value(forKey: "loginStatus"){
+                return Status as! Int
+            }else{
+                return 0
+            }
+        }
+        set{
+            UserDefaults.standard.set(newValue, forKey: "loginStatus")
+            UserDefaults.standard.synchronize()
+        }
+    }
 
 }

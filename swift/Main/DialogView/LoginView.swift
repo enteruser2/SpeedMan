@@ -279,6 +279,7 @@ class LoginView: BaseDialogView {
         
         if(self.launchViewController != nil)
         {
+            UserdefaultManager.shared.loginStatus = 0
             (self.launchViewController as! LaunchViewController).getuserModel()
         }
         

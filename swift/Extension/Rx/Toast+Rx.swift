@@ -13,15 +13,32 @@ import RxCocoa
 
 extension Reactive where Base: UIView {
     
+    func getValue<T>(from object: T, key: String) -> Any? {
+        let mirror = Mirror(reflecting: object)
+        for child in mirror.children {
+            if child.label == key {
+                return child.value
+            }
+        }
+        return nil
+    }
+    
     var toastError: Binder<NetError> {
         return Binder(self.base) { view, error in
-//            var code = 0
             var msg = "未知错误"
             switch error {
-            case let .error(code: _, msg: m):
-//                code = c
+            case let .error(code: c, msg: m):
                 msg = m
+                if(c == 400)
+                {
+                    if(UserManager.shared.translateModel != nil)
+                    {
+                        msg = "Man"+msg
+                        msg = getValue(from: UserManager.shared.translateModel!, key: msg) as! String
+                    }
+                }
             }
+    
             view.makeToast(msg)
         }
     }

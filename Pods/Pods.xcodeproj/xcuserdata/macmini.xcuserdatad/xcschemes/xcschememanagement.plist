@@ -44,6 +44,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AppLovinMediationVerveAdapter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AppLovinMediationVungleAdapter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>AppLovinSDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -244,6 +254,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HyBid-HyBid_Privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>HyBid.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -385,6 +405,16 @@
 			<false/>
 		</dict>
 		<key>UnityAds.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VungleAds-VungleAds.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VungleAds.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

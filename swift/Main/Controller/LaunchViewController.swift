@@ -44,7 +44,7 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccount
         
         
         self.showErrorView.bind(to: rx.showErrorView()).disposed(by: rx.disposeBag)
-        self.getTranslateModel()
+//        self.getTranslateModel()
         
     }
     
@@ -65,7 +65,7 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccount
     
     func getdeviceLoginModel() {
         CommonTool.LogLine(message: "LaunchViewController getdeviceLoginModel() \(UserdefaultManager.shared.userToken.isEmpty)")
-        if(!UserdefaultManager.shared.userToken.isEmpty)
+        if(!UserdefaultManager.shared.userToken.isEmpty && UserdefaultManager.shared.loginStatus == 0)
         {
             self.getuserModel()
         }
@@ -88,6 +88,7 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccount
                 {
                     if(deviceLogin?.login_status == 1)
                     {
+                        UserdefaultManager.shared.loginStatus = 1
                         // 登录弹窗 非运营国家可以选择自动进入
                         let loginView = LoginView(frame:CGRectMake(0, 0, UIDevice.screenWidth, UIDevice.screenHeight))
                         loginView.closeBtn.isHidden = false
