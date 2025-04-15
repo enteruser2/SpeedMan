@@ -44,7 +44,7 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccount
         
         
         self.showErrorView.bind(to: rx.showErrorView()).disposed(by: rx.disposeBag)
-//        self.getTranslateModel()
+        self.getTranslateModel()
         
     }
     

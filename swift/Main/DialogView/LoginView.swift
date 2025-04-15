@@ -227,7 +227,6 @@ class LoginView: BaseDialogView {
     
     
     func facebookLogin(){
-        
         let loginManager = LoginManager()
         loginManager.logIn(permissions: ["public_profile","email"], from:self.getCurrentVC()) { [self] result, error in
             
@@ -255,7 +254,7 @@ class LoginView: BaseDialogView {
         loginModel.nickname = ""
         loginModel.email =  ""
         loginModel.avatar =  ""
-        loginModel.access_token = loginResult.authenticationToken?.tokenString ?? ""
+        loginModel.access_token = loginResult.token?.tokenString ?? ""
         
         self.oauthLoginUser(loginModel: loginModel)
     }

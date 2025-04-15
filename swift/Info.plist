@@ -31,6 +31,8 @@
 	<string>0cf0a013c9e28b3aa6b035f480fdedf5</string>
 	<key>FacebookDisplayName</key>
 	<string>Speed Man GO</string>
+	<key>FirebaseAutomaticScreenReportingEnabled</key>
+	<false/>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9098455930726820~2441823323</string>
 	<key>GIDClientID</key>

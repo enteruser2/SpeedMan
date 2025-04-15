@@ -44,20 +44,20 @@ target 'SpeedMan' do
   pod 'FirebaseCrashlytics'
   pod 'GoogleSignIn'
 
-  pod 'FBSDKLoginKit','~> 17.0.1'
-  pod 'FBSDKShareKit','~> 17.0.1'
+  pod 'FBSDKLoginKit','~> 17.0.3'
+  pod 'FBSDKShareKit','~> 17.0.3'
 
   # 穿山甲
-  pod 'Ads-Global','~> 5.8.0.8'
+#  pod 'Ads-Global','~> 5.8.0.8'
 
   # max
   pod 'AppLovinSDK','~> 12.4.1'
   pod 'AppLovinMediationFacebookAdapter','~> 6.15.0.0'
   pod 'AppLovinMediationMintegralAdapter','~> 7.6.2.0'
-  pod 'AppLovinMediationByteDanceAdapter','~> 5.8.0.8'
+#  pod 'AppLovinMediationByteDanceAdapter','~> 5.8.0.8'
   pod 'AppLovinMediationUnityAdsAdapter','~> 4.10.0.0'
-  pod 'AppLovinMediationVerveAdapter','~> 3.0.1.0'
-  pod 'AppLovinMediationVungleAdapter','~> 7.4.1.0'
+#  pod 'AppLovinMediationVerveAdapter','~> 3.0.1.0'
+#  pod 'AppLovinMediationVungleAdapter','~> 7.4.1.0'
 
 
 
