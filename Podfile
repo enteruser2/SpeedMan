@@ -65,7 +65,7 @@ target 'SpeedMan' do
   pod 'AppLovinMediationByteDanceAdapter','~> 5.8.0.8'
   pod 'AppLovinMediationUnityAdsAdapter','~> 4.10.0.0'
 #  pod 'AppLovinMediationVerveAdapter','~> 3.0.1.0'
-  pod 'AppLovinMediationVungleAdapter','~> 7.4.1.0'
+#  pod 'AppLovinMediationVungleAdapter','~> 7.4.1.0'
 
 
 
