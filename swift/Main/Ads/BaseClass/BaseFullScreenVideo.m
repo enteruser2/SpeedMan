@@ -115,6 +115,7 @@
 {
     [self closeEvent];
     self.eventType = Close;
+    [self removeCache];
 }
 
 //点击视频内容
@@ -124,6 +125,12 @@
     self.eventType = Click;
 }
 
+
+- (void)setEventType:(int)eventType
+{
+    _eventType = eventType;
+    [self updateLog];
+}
 
 //发放奖励
 -(void)rewardIssue
@@ -214,7 +221,7 @@
 -(void)closeEvent
 {
     [[AdsSwift shared] closeEventWithPostionADSceneType:self.postionADSceneType];
-    if (self.isClick && [self.postionADSceneType isEqualToString:@"iosVideoIdFreePlay"])
+    if (self.isClick && [self.postionADSceneType isEqualToString:@"iosVideoAdIdFreePlay"])
     {
         [[AdsSwift shared] clickEventWithPostionADSceneType:self.postionADSceneType];
     }

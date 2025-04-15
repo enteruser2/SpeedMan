@@ -238,7 +238,7 @@
 -(void)closeEvent
 {
     [[AdsSwift shared] closeEventWithPostionADSceneType:self.postionADSceneType];
-    if (self.isClick && [self.postionADSceneType isEqualToString:@"iosVideoIdFreePlay"]) {
+    if (self.isClick && [self.postionADSceneType isEqualToString:@"iosVideoAdIdFreePlay"]) {
         [[AdsSwift shared] clickEventWithPostionADSceneType:self.postionADSceneType];
     }
 }

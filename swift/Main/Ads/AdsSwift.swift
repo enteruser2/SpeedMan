@@ -42,6 +42,8 @@ import AppLovinSDK
         CommonTool.LogLine(message: "closeEvent postionADSceneType : \(postionADSceneType)")
         switch postionADSceneType {
         case ADSceneType.VideoAdId.rawValue:  videoCallCocosSuccess(postionADSceneType:postionADSceneType); break
+        case ADSceneType.VideoAdIdFreePlay.rawValue:  videoCallCocosSuccess(postionADSceneType:postionADSceneType); break
+
 //        case ADSceneType.VideoIdCocosInteractive.rawValue:
             // 游戏首页互动任务
 //            NetManager.requestObj(.interactDraw(id: UserManager.shared.cocos_InteractID), type: DrawModel.self).asObservable().subscribe(onNext: { model in
@@ -89,20 +91,20 @@ import AppLovinSDK
     
     func  clickEvent(postionADSceneType:String){
         switch postionADSceneType {
-        case ADSceneType.VideoAdId.rawValue:
+        case ADSceneType.VideoAdIdFreePlay.rawValue:
             CommonTool.LogLine(message: "AdsSwift clickEvent ")
-//            // 诱导任务
-//            NetManager.requestObj(.clickVideoAd, type: BaseModel.self).asObservable().subscribe(onNext: { model in
-//                CommonTool.LogLine(message: "AdsSwift clickEvent success: \(String(describing: model))")
+            // 诱导任务
+            NetManager.requestObj(.clickVideoAd, type: BaseModel.self).asObservable().subscribe(onNext: { model in
+                CommonTool.LogLine(message: "AdsSwift clickEvent success: \(String(describing: model))")
 //                if(self.viewController.isKind(of: TaskViewController.self))
 //                {
 //                    let vc = (self.viewController as! TaskViewController)
 //                    vc.refreshData()
 //                }
-//                
-//            },onError: {error in
-//                
-//            }).disposed(by: self.rx.disposeBag)
+                
+            },onError: {error in
+                
+            }).disposed(by: self.rx.disposeBag)
             
             break
             

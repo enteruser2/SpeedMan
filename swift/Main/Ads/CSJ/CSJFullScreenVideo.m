@@ -49,6 +49,7 @@
 - (void)adDidShow:(id<PAGAdProtocol>)ad
 {
     NSLog(@"%s:adDidShow",__func__);
+    [self showSuccess];
 }
 
 /// This method is called when the add has been clicked
@@ -62,7 +63,7 @@
 - (void)adDidDismiss:(id<PAGAdProtocol>)ad
 {
     NSLog(@"%s:adDidDismiss",__func__);
-    [self showSuccess];
+    [self closeVideo];
 }
 
 ///This method is called when the ad has been show fail
