@@ -254,7 +254,7 @@ class LoginView: BaseDialogView {
         loginModel.nickname = ""
         loginModel.email =  ""
         loginModel.avatar =  ""
-        loginModel.access_token = loginResult.token?.tokenString ?? ""
+        loginModel.access_token = loginResult.authenticationToken?.tokenString ?? ""
         
         self.oauthLoginUser(loginModel: loginModel)
     }
