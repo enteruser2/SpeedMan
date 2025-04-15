@@ -41,13 +41,15 @@ jobs:
         security unlock-keychain -p "" build.keychain
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
 
-    - name: Install CocoaPods
-      run: |
-        pod install
-
     - name: Clean Xcode Derived Data
       run: |
         rm -rf ~/Library/Developer/Xcode/DerivedData/*
+        rm -rf Pods/
+        pod cache clean --all
+
+    - name: Install CocoaPods
+      run: |
+        pod install
 
     - name: Build the app
       run: |
