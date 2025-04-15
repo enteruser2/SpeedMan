@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44ED88CB2D94E9F3001B9D3D /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 44ED88C72D94E9F3001B9D3D /* jsb-adapter */; };
-		44ED88CC2D94E9F3001B9D3D /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 44ED88C82D94E9F3001B9D3D /* main.js */; };
-		44ED88CD2D94E9F3001B9D3D /* src in Resources */ = {isa = PBXBuildFile; fileRef = 44ED88C92D94E9F3001B9D3D /* src */; };
-		44ED88CE2D94E9F3001B9D3D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 44ED88CA2D94E9F3001B9D3D /* assets */; };
 		9A0140082D069A95004D85BD /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0140072D069A95004D85BD /* PrivacyViewController.swift */; };
 		9A01400A2D06A31B004D85BD /* PrivacyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0140092D06A31B004D85BD /* PrivacyModel.swift */; };
 		9A042DBA2D6703CF00A8C469 /* SDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A042DB62D6703CE00A8C469 /* SDKWrapper.m */; };
@@ -24,6 +20,10 @@
 		9A7520B32D882F3300150107 /* CocosMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7520B22D882F3300150107 /* CocosMetalView.swift */; };
 		9AB64BD72CE5DA9900249D50 /* FetchAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */; };
 		9AC4FC442D02D4D700992F41 /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4FC432D02D4D700992F41 /* ShareModel.swift */; };
+		9ADA26502DAE3D0900AE335F /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA264C2DAE3D0900AE335F /* src */; };
+		9ADA26512DAE3D0900AE335F /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA264D2DAE3D0900AE335F /* jsb-adapter */; };
+		9ADA26522DAE3D0900AE335F /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA264E2DAE3D0900AE335F /* main.js */; };
+		9ADA26532DAE3D0900AE335F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA264F2DAE3D0900AE335F /* assets */; };
 		D4F87DC7DD7490151C0EB2DA /* Pods_SpeedMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08860A58F7FCB72DA28A086 /* Pods_SpeedMan.framework */; };
 		FE0C80E22BABC0EE0075950B /* AdsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E12BABC0EE0075950B /* AdsSwift.swift */; };
 		FE0C80E62BABC54B0075950B /* BaseRewardVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E42BABC54A0075950B /* BaseRewardVideo.m */; };
@@ -131,10 +131,6 @@
 		22D3B13E3177D27FDE1BC372 /* Pods-SpeedMan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedMan.debug.xcconfig"; path = "Target Support Files/Pods-SpeedMan/Pods-SpeedMan.debug.xcconfig"; sourceTree = "<group>"; };
 		272F28F89D5A9FE3A0131016 /* Pods_CrazyBird_CrazyBirdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrazyBird_CrazyBirdUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D90D827509F144A2C7C7D29 /* Pods-GoodCut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodCut.debug.xcconfig"; path = "Target Support Files/Pods-GoodCut/Pods-GoodCut.debug.xcconfig"; sourceTree = "<group>"; };
-		44ED88C72D94E9F3001B9D3D /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
-		44ED88C82D94E9F3001B9D3D /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		44ED88C92D94E9F3001B9D3D /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
-		44ED88CA2D94E9F3001B9D3D /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		7375EBF91824C3AE3F26812A /* Pods-SpeedMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedMan.release.xcconfig"; path = "Target Support Files/Pods-SpeedMan/Pods-SpeedMan.release.xcconfig"; sourceTree = "<group>"; };
 		9A0140072D069A95004D85BD /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		9A0140092D06A31B004D85BD /* PrivacyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyModel.swift; sourceTree = "<group>"; };
@@ -156,6 +152,10 @@
 		9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAdModel.swift; sourceTree = "<group>"; };
 		9AC4FC432D02D4D700992F41 /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
 		9AD88D042D0974FB00574DB5 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
+		9ADA264C2DAE3D0900AE335F /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		9ADA264D2DAE3D0900AE335F /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
+		9ADA264E2DAE3D0900AE335F /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		9ADA264F2DAE3D0900AE335F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		9AEBC2CA2D6323F900E9576D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9B1D2A32143420CD35531DA1 /* Pods_CrazyBirdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrazyBirdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCC625526DC7927E3200B5C /* Pods-GoodCut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodCut.release.xcconfig"; path = "Target Support Files/Pods-GoodCut/Pods-GoodCut.release.xcconfig"; sourceTree = "<group>"; };
@@ -771,10 +771,10 @@
 		FEEC9A512B29837200AD0A1A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				44ED88CA2D94E9F3001B9D3D /* assets */,
-				44ED88C72D94E9F3001B9D3D /* jsb-adapter */,
-				44ED88C82D94E9F3001B9D3D /* main.js */,
-				44ED88C92D94E9F3001B9D3D /* src */,
+				9ADA264F2DAE3D0900AE335F /* assets */,
+				9ADA264D2DAE3D0900AE335F /* jsb-adapter */,
+				9ADA264E2DAE3D0900AE335F /* main.js */,
+				9ADA264C2DAE3D0900AE335F /* src */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -970,19 +970,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44ED88CB2D94E9F3001B9D3D /* jsb-adapter in Resources */,
-				44ED88CC2D94E9F3001B9D3D /* main.js in Resources */,
-				44ED88CD2D94E9F3001B9D3D /* src in Resources */,
-				44ED88CE2D94E9F3001B9D3D /* assets in Resources */,
+				9ADA26532DAE3D0900AE335F /* assets in Resources */,
 				FE3D007C2B216D5700A25670 /* LaunchScreen.storyboard in Resources */,
 				FEDFB2062B2AF69A004210FC /* ReleaseConfig.xcconfig in Resources */,
 				9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */,
+				9ADA26502DAE3D0900AE335F /* src in Resources */,
 				FEDFB2042B2AF69A004210FC /* DebugConfig.xcconfig in Resources */,
 				FE24149D2B318D70001288AB /* Arial.ttf in Resources */,
 				FE24149E2B318D70001288AB /* Arial Bold Italic.ttf in Resources */,
 				FE3D00792B216D5700A25670 /* Assets.xcassets in Resources */,
 				FE3D00772B216D5500A25670 /* Main.storyboard in Resources */,
+				9ADA26512DAE3D0900AE335F /* jsb-adapter in Resources */,
 				FE24149C2B318D70001288AB /* Arial Bold.ttf in Resources */,
+				9ADA26522DAE3D0900AE335F /* main.js in Resources */,
 				FEDFB2052B2AF69A004210FC /* CommonConfig.xcconfig in Resources */,
 				FE24149F2B318D70001288AB /* Arial Italic.ttf in Resources */,
 			);
@@ -1356,13 +1356,13 @@
 				COCOAPODS_PARALLEL_CODE_SIGN = true;
 				CODE_SIGN_ENTITLEMENTS = swift/swift.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 27HW9K4T64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DDGNDSD6WU;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1635,10 +1635,10 @@
 					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.speedman.go;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colorlab.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ProvisioningProfileSpeedMan_AdHoc;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = colorlabdevelopment;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1669,13 +1669,13 @@
 				COCOAPODS_PARALLEL_CODE_SIGN = true;
 				CODE_SIGN_ENTITLEMENTS = swift/swift.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 27HW9K4T64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DDGNDSD6WU;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1956,10 +1956,10 @@
 					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.speedman.go;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colorlab.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ProvisioningProfileSpeedMan_AdHoc;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = colorlabdevelopment;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
