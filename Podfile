@@ -14,44 +14,37 @@ target 'SpeedMan' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SpeedMan
+  # 网络与数据
+  pod 'Moya'
+  pod 'SwiftyJSON'
+  pod 'HandyJSON'
+  
+  # UI 工具
+  pod 'SnapKit'
+  pod 'HBDNavigationBar', '~> 1.7.5'
+  pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
+  
+  # RxSwift 生态
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxGesture'
   pod 'RxSwiftExt'
   pod 'RxDataSources'
   pod 'NSObject+Rx', '~> 5.0'
-# pod 'MJRefresh'
-  pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
-# pod 'YYText'
+  
+  # 工具库
   pod 'SwifterSwift', '~> 5.0'
   pod 'MBProgressHUD'
-  pod 'Moya'
-  pod 'SnapKit'
-  pod 'SwiftyJSON'
-  pod 'HandyJSON'
   pod 'GTMBase64'
-  pod 'HBDNavigationBar', '~> 1.7.5'
   pod 'Hue'
   pod 'JSONModel', '~> 1.2.0'
-#  pod 'Reusable'
-#  pod 'SDWebImage'
-
-#  pod 'NVActivityIndicatorView'
-#  pod 'UITableView+FDTemplateLayoutCell'
-#  pod 'IQKeyboardManagerSwift'
-  # For Analytics without IDFA collection capability, use this pod instead
-  # pod ‘Firebase/AnalyticsWithoutAdIdSupport’
-
-  # Add the pods for any other Firebase products you want to use in your app
-  # For example, to use Firebase Authentication and Cloud Firestore
-  # Add the Firebase pod for Google Analytics
+  
+  # Firebase
   pod 'FirebaseAnalytics'
-#  pod 'FirebaseAuth'
-#  pod 'FirebaseFirestore'
   pod 'FirebaseCrashlytics'
-  pod 'GoogleSignIn'
 
+  # 社交登录
+  pod 'GoogleSignIn'
   pod 'FBSDKLoginKit','~> 17.0.3'
   pod 'FBSDKShareKit','~> 17.0.3'
 
@@ -67,11 +60,8 @@ target 'SpeedMan' do
 #  pod 'AppLovinMediationVerveAdapter','~> 3.0.1.0'
 #  pod 'AppLovinMediationVungleAdapter','~> 7.4.1.0'
 
-
-
   #admob
   pod 'Google-Mobile-Ads-SDK','~> 11.1.0'
-#  pod 'GoogleMobileAdsMediationFacebook','~> 6.15.0.0'
-#  pod 'GoogleMobileAdsMediationPangle','~> 5.8.0.8.0'
-#  pod 'GoogleMobileAdsMediationMintegral','~> 7.6.2.0'
+
 end
+
