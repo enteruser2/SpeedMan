@@ -20,10 +20,10 @@
 		9A7520B32D882F3300150107 /* CocosMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7520B22D882F3300150107 /* CocosMetalView.swift */; };
 		9AB64BD72CE5DA9900249D50 /* FetchAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */; };
 		9AC4FC442D02D4D700992F41 /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4FC432D02D4D700992F41 /* ShareModel.swift */; };
-		9ADA26502DAE3D0900AE335F /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA264C2DAE3D0900AE335F /* src */; };
-		9ADA26512DAE3D0900AE335F /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA264D2DAE3D0900AE335F /* jsb-adapter */; };
-		9ADA26522DAE3D0900AE335F /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA264E2DAE3D0900AE335F /* main.js */; };
-		9ADA26532DAE3D0900AE335F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA264F2DAE3D0900AE335F /* assets */; };
+		9ADA26582DAE42E800AE335F /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA26542DAE42E800AE335F /* jsb-adapter */; };
+		9ADA26592DAE42E800AE335F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA26552DAE42E800AE335F /* assets */; };
+		9ADA265A2DAE42E800AE335F /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA26562DAE42E800AE335F /* main.js */; };
+		9ADA265B2DAE42E800AE335F /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9ADA26572DAE42E800AE335F /* src */; };
 		D4F87DC7DD7490151C0EB2DA /* Pods_SpeedMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08860A58F7FCB72DA28A086 /* Pods_SpeedMan.framework */; };
 		FE0C80E22BABC0EE0075950B /* AdsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E12BABC0EE0075950B /* AdsSwift.swift */; };
 		FE0C80E62BABC54B0075950B /* BaseRewardVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E42BABC54A0075950B /* BaseRewardVideo.m */; };
@@ -152,10 +152,10 @@
 		9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAdModel.swift; sourceTree = "<group>"; };
 		9AC4FC432D02D4D700992F41 /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
 		9AD88D042D0974FB00574DB5 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
-		9ADA264C2DAE3D0900AE335F /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
-		9ADA264D2DAE3D0900AE335F /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
-		9ADA264E2DAE3D0900AE335F /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		9ADA264F2DAE3D0900AE335F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		9ADA26542DAE42E800AE335F /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
+		9ADA26552DAE42E800AE335F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		9ADA26562DAE42E800AE335F /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		9ADA26572DAE42E800AE335F /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		9AEBC2CA2D6323F900E9576D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9B1D2A32143420CD35531DA1 /* Pods_CrazyBirdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrazyBirdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCC625526DC7927E3200B5C /* Pods-GoodCut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodCut.release.xcconfig"; path = "Target Support Files/Pods-GoodCut/Pods-GoodCut.release.xcconfig"; sourceTree = "<group>"; };
@@ -771,10 +771,10 @@
 		FEEC9A512B29837200AD0A1A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9ADA264F2DAE3D0900AE335F /* assets */,
-				9ADA264D2DAE3D0900AE335F /* jsb-adapter */,
-				9ADA264E2DAE3D0900AE335F /* main.js */,
-				9ADA264C2DAE3D0900AE335F /* src */,
+				9ADA26552DAE42E800AE335F /* assets */,
+				9ADA26542DAE42E800AE335F /* jsb-adapter */,
+				9ADA26562DAE42E800AE335F /* main.js */,
+				9ADA26572DAE42E800AE335F /* src */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -970,19 +970,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ADA26532DAE3D0900AE335F /* assets in Resources */,
+				9ADA26592DAE42E800AE335F /* assets in Resources */,
 				FE3D007C2B216D5700A25670 /* LaunchScreen.storyboard in Resources */,
 				FEDFB2062B2AF69A004210FC /* ReleaseConfig.xcconfig in Resources */,
 				9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */,
-				9ADA26502DAE3D0900AE335F /* src in Resources */,
 				FEDFB2042B2AF69A004210FC /* DebugConfig.xcconfig in Resources */,
 				FE24149D2B318D70001288AB /* Arial.ttf in Resources */,
 				FE24149E2B318D70001288AB /* Arial Bold Italic.ttf in Resources */,
 				FE3D00792B216D5700A25670 /* Assets.xcassets in Resources */,
 				FE3D00772B216D5500A25670 /* Main.storyboard in Resources */,
-				9ADA26512DAE3D0900AE335F /* jsb-adapter in Resources */,
+				9ADA265B2DAE42E800AE335F /* src in Resources */,
+				9ADA26582DAE42E800AE335F /* jsb-adapter in Resources */,
 				FE24149C2B318D70001288AB /* Arial Bold.ttf in Resources */,
-				9ADA26522DAE3D0900AE335F /* main.js in Resources */,
+				9ADA265A2DAE42E800AE335F /* main.js in Resources */,
 				FEDFB2052B2AF69A004210FC /* CommonConfig.xcconfig in Resources */,
 				FE24149F2B318D70001288AB /* Arial Italic.ttf in Resources */,
 			);
@@ -1356,13 +1356,13 @@
 				COCOAPODS_PARALLEL_CODE_SIGN = true;
 				CODE_SIGN_ENTITLEMENTS = swift/swift.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DDGNDSD6WU;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 27HW9K4T64;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1635,10 +1635,10 @@
 					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.colorlab.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedman.go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = colorlabdevelopment;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ProvisioningProfileSpeedMan_AdHoc;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1669,13 +1669,13 @@
 				COCOAPODS_PARALLEL_CODE_SIGN = true;
 				CODE_SIGN_ENTITLEMENTS = swift/swift.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DDGNDSD6WU;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 27HW9K4T64;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1956,10 +1956,10 @@
 					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.colorlab.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedman.go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = colorlabdevelopment;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ProvisioningProfileSpeedMan_AdHoc;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
