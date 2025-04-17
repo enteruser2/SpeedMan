@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AppLovinSDK
+//import AppLovinSDK
 
 class PrivacyViewController:WebViewController  {
     
@@ -66,7 +66,7 @@ class PrivacyViewController:WebViewController  {
             
         }).disposed(by: self.rx.disposeBag)
         
-        ALSdk.shared().showMediationDebugger()
+//        ALSdk.shared().showMediationDebugger()
 
         
     }
