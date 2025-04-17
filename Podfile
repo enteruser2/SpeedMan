@@ -46,7 +46,7 @@ target 'SpeedMan' do
   # max
   pod 'AppLovinSDK','~> 12.4.1'
   pod 'AppLovinMediationFacebookAdapter','~> 6.15.0.0'
-  pod 'AppLovinMediationMintegralAdapter','~> 7.6.2.0'
+#  pod 'AppLovinMediationMintegralAdapter','~> 7.6.2.0'
   pod 'AppLovinMediationByteDanceAdapter','~> 5.8.0.8'
   pod 'AppLovinMediationUnityAdsAdapter','~> 4.10.0.0'
 #  pod 'AppLovinMediationVerveAdapter','~> 3.0.1.0'

@@ -57,7 +57,7 @@ jobs:
                    -configuration AdHoc \
                    -archivePath $PWD/build/SpeedMan.xcarchive \
                    -destination 'generic/platform=iOS' \
-                   clean archive | xcpretty
+                   clean archive
 
     - name: Export IPA
       run: |
