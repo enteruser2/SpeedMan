@@ -1345,6 +1345,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEDFB2012B2AF69A004210FC /* DebugConfig.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1659,6 +1660,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEDFB2032B2AF69A004210FC /* ReleaseConfig.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
