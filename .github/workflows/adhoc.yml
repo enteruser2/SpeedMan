@@ -47,7 +47,6 @@ jobs:
 
     - name: Install CocoaPods
       run: |
-rm -rf 
         pod install
 
     - name: Build the app
