@@ -8,6 +8,7 @@
 import UIKit
 import AppLovinSDK
 import GoogleMobileAds
+import FBAudienceNetwork
 import MTGSDK
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -119,7 +120,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["6c4c589775033eefeda89adc87699473"]
 
         // 如果您要针对 iOS 14 或更高版本进行构建，Meta Audience Network 会要求您使用以下代码明确设置其“已启用广告跟踪”标志：
-//        FBAdSettings.setAdvertiserTrackingEnabled(true)
+        FBAdSettings.setAdvertiserTrackingEnabled(true)
         MTGSDK.sharedInstance().consentStatus = true
         MTGSDK.sharedInstance().doNotTrackStatus = false
     }

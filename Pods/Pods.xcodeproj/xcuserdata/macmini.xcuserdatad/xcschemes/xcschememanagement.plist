@@ -39,12 +39,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AppLovinMediationFacebookAdapter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>AppLovinMediationMintegralAdapter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>AppLovinMediationUnityAdsAdapter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AppLovinMediationVerveAdapter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AppLovinMediationVungleAdapter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -65,6 +80,16 @@
 			<false/>
 		</dict>
 		<key>FBAEMKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBAudienceNetwork-FBAudienceNetwork.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBAudienceNetwork.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -244,6 +269,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HyBid-HyBid_Privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>HyBid.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -385,6 +420,16 @@
 			<false/>
 		</dict>
 		<key>UnityAds.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VungleAds-VungleAds.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VungleAds.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
