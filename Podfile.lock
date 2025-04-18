@@ -1,8 +1,15 @@
 PODS:
+  - Ads-Global (5.8.0.8):
+    - Ads-Global/BUAdSDK (= 5.8.0.8)
+  - Ads-Global/BUAdSDK (5.8.0.8):
+    - Ads-Global/BURelyAdSDK
+    - Ads-Global/Dep_Accurate
   - Ads-Global/BUAdSDK_Compatible (5.8.0.8):
     - Ads-Global/BURelyAdSDK
     - Ads-Global/Dep_Compatible
   - Ads-Global/BURelyAdSDK (5.8.0.8)
+  - Ads-Global/Dep_Accurate (5.8.0.8):
+    - BURelyFoundation_Global/Pangle (= 0.2.1.4)
   - Ads-Global/Dep_Compatible (5.8.0.8):
     - BURelyFoundation_Global/Pangle (~> 0.2.1.4)
   - Alamofire (5.10.1)
@@ -294,6 +301,7 @@ PODS:
   - UnityAds (4.10.0)
 
 DEPENDENCIES:
+  - Ads-Global (~> 5.8.0.8)
   - AppLovinMediationByteDanceAdapter (~> 5.8.0.8)
   - AppLovinMediationFacebookAdapter (~> 6.15.0.0)
   - AppLovinMediationMintegralAdapter (~> 7.6.2.0)
@@ -440,6 +448,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
   UnityAds: 5601f6397b0e02ed3ed6ee92827f5177a523aab6
 
-PODFILE CHECKSUM: 6088c9bde9b5c01088112f09f4404546f476bd9e
+PODFILE CHECKSUM: b541283c79b9ac64613b680d3513834c5cca26b6
 
 COCOAPODS: 1.16.2
