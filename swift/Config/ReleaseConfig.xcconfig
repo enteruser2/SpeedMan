@@ -7,7 +7,7 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
-NET_API_URL = api-testing.speedmangame.com;
+NET_API_URL = api.speedmangame.com;
 // 加密key
 PSW_AES_KEY = FN47f0xDEEH3XtWrt50HbyH4yWzfJF9J;
 // 签名key
