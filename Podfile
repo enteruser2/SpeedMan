@@ -5,6 +5,7 @@
 target 'SpeedMan' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  
   # 网络与数据
   pod 'Moya'
   pod 'SwiftyJSON'
@@ -40,7 +41,7 @@ target 'SpeedMan' do
   pod 'FBSDKShareKit','~> 17.0.3'
 
   # 穿山甲
-#  pod 'Ads-Global','~> 5.8.0.8'
+  pod 'Ads-Global','~> 5.8.0.8'
 
   # max
   pod 'AppLovinSDK','~> 12.4.1'

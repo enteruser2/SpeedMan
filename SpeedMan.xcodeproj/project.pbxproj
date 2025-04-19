@@ -129,7 +129,6 @@
 
 /* Begin PBXFileReference section */
 		22D3B13E3177D27FDE1BC372 /* Pods-SpeedMan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedMan.debug.xcconfig"; path = "Target Support Files/Pods-SpeedMan/Pods-SpeedMan.debug.xcconfig"; sourceTree = "<group>"; };
-		272F28F89D5A9FE3A0131016 /* Pods_CrazyBird_CrazyBirdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrazyBird_CrazyBirdUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7375EBF91824C3AE3F26812A /* Pods-SpeedMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedMan.release.xcconfig"; path = "Target Support Files/Pods-SpeedMan/Pods-SpeedMan.release.xcconfig"; sourceTree = "<group>"; };
 		9A0140072D069A95004D85BD /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		9A0140092D06A31B004D85BD /* PrivacyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyModel.swift; sourceTree = "<group>"; };
@@ -156,7 +155,6 @@
 		9AC4FC432D02D4D700992F41 /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
 		9AD88D042D0974FB00574DB5 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
 		9AEBC2CA2D6323F900E9576D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		9B1D2A32143420CD35531DA1 /* Pods_CrazyBirdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrazyBirdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08860A58F7FCB72DA28A086 /* Pods_SpeedMan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeedMan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0C80E12BABC0EE0075950B /* AdsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsSwift.swift; sourceTree = "<group>"; };
 		FE0C80E42BABC54A0075950B /* BaseRewardVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRewardVideo.m; sourceTree = "<group>"; };
@@ -436,8 +434,6 @@
 				FEEC99872B294E4200AD0A1A /* AdSupport.framework */,
 				FEEC99852B294E3D00AD0A1A /* CoreImage.framework */,
 				FEEC99832B294E2E00AD0A1A /* AuthenticationServices.framework */,
-				272F28F89D5A9FE3A0131016 /* Pods_CrazyBird_CrazyBirdUITests.framework */,
-				9B1D2A32143420CD35531DA1 /* Pods_CrazyBirdTests.framework */,
 				D08860A58F7FCB72DA28A086 /* Pods_SpeedMan.framework */,
 			);
 			name = Frameworks;
