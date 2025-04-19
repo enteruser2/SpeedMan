@@ -41,13 +41,13 @@ jobs:
         security unlock-keychain -p "" build.keychain
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
 
-    - name: Install CocoaPods
-      run: |
-        pod install
-
     - name: Clean Xcode Derived Data
       run: |
         rm -rf ~/Library/Developer/Xcode/DerivedData/*
+
+    - name: Install CocoaPods
+      run: |
+        pod install
 
     - name: Build the app
       run: |
@@ -58,8 +58,27 @@ jobs:
                    -archivePath $PWD/build/SpeedMan.xcarchive \
                    -destination 'generic/platform=iOS' \
                    clean archive | xcpretty
-        xcodebuild -exportArchive \
-                   -archivePath $PWD/build/SpeedMan.xcarchive \
+
+    - name: Export IPA
+      run: |
+        xcodebuild -archivePath $PWD/build/SpeedMan.xcarchive \
                    -exportOptionsPlist exportOptionsAdHoc.plist \
-                   -exportPath $PWD/build
+                   -exportPath $PWD/build \
+           	   -allowProvisioningUpdates \
+            	   -exportArchive | xcpretty
+
+    - name: Check IPA Exists
+      run: |
+       if [ -f "build/SpeedMan.ipa" ]; then
+        echo "IPA 生成成功"
+       else
+        echo "错误：未找到 IPA 文件！"
+        exit 1
+       fi
+
+    - name: Upload IPA
+      uses: actions/upload-artifact@v4
+      with:
+       name: SpeedMan.ipa
+       path: build/SpeedMan.ipa
 
