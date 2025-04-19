@@ -12,15 +12,15 @@
 		9A042DBA2D6703CF00A8C469 /* SDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A042DB62D6703CE00A8C469 /* SDKWrapper.m */; };
 		9A042DBB2D6703CF00A8C469 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A042DB92D6703CF00A8C469 /* Game.cpp */; };
 		9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A1161D92D16B07B00552173 /* GoogleService-Info.plist */; };
-		9A16CE9C2DB34FD2005C21ED /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9A16CE982DB34FD2005C21ED /* main.js */; };
-		9A16CE9D2DB34FD2005C21ED /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9A16CE992DB34FD2005C21ED /* jsb-adapter */; };
-		9A16CE9E2DB34FD2005C21ED /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A16CE9A2DB34FD2005C21ED /* assets */; };
-		9A16CE9F2DB34FD2005C21ED /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9A16CE9B2DB34FD2005C21ED /* src */; };
 		9A4245452D6728B300EAFAE6 /* CocosAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245442D6728B300EAFAE6 /* CocosAppDelegate.m */; };
 		9A42455B2D67322500EAFAE6 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245542D67322500EAFAE6 /* AppDefine.swift */; };
 		9A42455E2D67322500EAFAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245572D67322500EAFAE6 /* AppDelegate.swift */; };
 		9A42455F2D67322500EAFAE6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245582D67322500EAFAE6 /* Application.swift */; };
 		9A43E5282D671AE9007245FA /* CocosBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A43E5262D671AE9007245FA /* CocosBridge.m */; };
+		9A6F7A062DB3635F000B107F /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9A6F7A022DB3635F000B107F /* jsb-adapter */; };
+		9A6F7A072DB3635F000B107F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6F7A032DB3635F000B107F /* assets */; };
+		9A6F7A082DB3635F000B107F /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9A6F7A042DB3635F000B107F /* src */; };
+		9A6F7A092DB3635F000B107F /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9A6F7A052DB3635F000B107F /* main.js */; };
 		9A7520B32D882F3300150107 /* CocosMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7520B22D882F3300150107 /* CocosMetalView.swift */; };
 		9AB64BD72CE5DA9900249D50 /* FetchAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */; };
 		9AC4FC442D02D4D700992F41 /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4FC432D02D4D700992F41 /* ShareModel.swift */; };
@@ -138,10 +138,6 @@
 		9A042DB82D6703CF00A8C469 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		9A042DB92D6703CF00A8C469 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		9A1161D92D16B07B00552173 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9A16CE982DB34FD2005C21ED /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		9A16CE992DB34FD2005C21ED /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
-		9A16CE9A2DB34FD2005C21ED /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
-		9A16CE9B2DB34FD2005C21ED /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		9A4245432D6728B300EAFAE6 /* CocosAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosAppDelegate.h; sourceTree = "<group>"; };
 		9A4245442D6728B300EAFAE6 /* CocosAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocosAppDelegate.m; sourceTree = "<group>"; };
 		9A4245542D67322500EAFAE6 /* AppDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
@@ -150,6 +146,10 @@
 		9A43E5262D671AE9007245FA /* CocosBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosBridge.m; sourceTree = "<group>"; };
 		9A43E5272D671AE9007245FA /* CocosBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosBridge.h; sourceTree = "<group>"; };
 		9A4985212D154021009E6902 /* exportOptionsAdHoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptionsAdHoc.plist; sourceTree = "<group>"; };
+		9A6F7A022DB3635F000B107F /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
+		9A6F7A032DB3635F000B107F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		9A6F7A042DB3635F000B107F /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		9A6F7A052DB3635F000B107F /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		9A7520B22D882F3300150107 /* CocosMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocosMetalView.swift; sourceTree = "<group>"; };
 		9AA722A72D891A5600175AFF /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAdModel.swift; sourceTree = "<group>"; };
@@ -767,10 +767,10 @@
 		FEEC9A512B29837200AD0A1A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9A16CE9A2DB34FD2005C21ED /* assets */,
-				9A16CE992DB34FD2005C21ED /* jsb-adapter */,
-				9A16CE982DB34FD2005C21ED /* main.js */,
-				9A16CE9B2DB34FD2005C21ED /* src */,
+				9A6F7A032DB3635F000B107F /* assets */,
+				9A6F7A022DB3635F000B107F /* jsb-adapter */,
+				9A6F7A052DB3635F000B107F /* main.js */,
+				9A6F7A042DB3635F000B107F /* src */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -966,18 +966,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6F7A072DB3635F000B107F /* assets in Resources */,
 				FE3D007C2B216D5700A25670 /* LaunchScreen.storyboard in Resources */,
 				FEDFB2062B2AF69A004210FC /* ReleaseConfig.xcconfig in Resources */,
 				9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */,
-				9A16CE9C2DB34FD2005C21ED /* main.js in Resources */,
 				FEDFB2042B2AF69A004210FC /* DebugConfig.xcconfig in Resources */,
+				9A6F7A082DB3635F000B107F /* src in Resources */,
 				FE24149D2B318D70001288AB /* Arial.ttf in Resources */,
 				FE24149E2B318D70001288AB /* Arial Bold Italic.ttf in Resources */,
 				FE3D00792B216D5700A25670 /* Assets.xcassets in Resources */,
+				9A6F7A092DB3635F000B107F /* main.js in Resources */,
 				FE3D00772B216D5500A25670 /* Main.storyboard in Resources */,
-				9A16CE9F2DB34FD2005C21ED /* src in Resources */,
-				9A16CE9E2DB34FD2005C21ED /* assets in Resources */,
-				9A16CE9D2DB34FD2005C21ED /* jsb-adapter in Resources */,
+				9A6F7A062DB3635F000B107F /* jsb-adapter in Resources */,
 				FE24149C2B318D70001288AB /* Arial Bold.ttf in Resources */,
 				FEDFB2052B2AF69A004210FC /* CommonConfig.xcconfig in Resources */,
 				FE24149F2B318D70001288AB /* Arial Italic.ttf in Resources */,
@@ -1534,7 +1534,7 @@
 					"$(inherited)",
 					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"'-std=gnu99'",
@@ -1852,7 +1852,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
