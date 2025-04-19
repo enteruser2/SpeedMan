@@ -31,8 +31,8 @@ target 'SpeedMan' do
   pod 'JSONModel', '~> 1.2.0'
   
   # Firebase
-  pod 'FirebaseAnalytics','~> 11.4.0'
-  pod 'FirebaseCrashlytics','~> 11.4.0'
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseCrashlytics'
 
   # 社交登录
   pod 'GoogleSignIn'
@@ -44,7 +44,7 @@ target 'SpeedMan' do
 
   # max
   pod 'AppLovinSDK','~> 12.4.1'
-#  pod 'AppLovinMediationFacebookAdapter','~> 6.15.0.0'
+  pod 'AppLovinMediationFacebookAdapter','~> 6.15.0.0'
   pod 'AppLovinMediationMintegralAdapter','~> 7.6.2.0'
   pod 'AppLovinMediationByteDanceAdapter','~> 5.8.0.8'
   pod 'AppLovinMediationUnityAdsAdapter','~> 4.10.0.0'
