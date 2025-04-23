@@ -118,6 +118,15 @@
     if ([hardware isEqualToString:@"iPhone14,8"])    return @"iPhone 14 Plus";
     if ([hardware isEqualToString:@"iPhone15,2"])    return @"iPhone 14 Pro";
     if ([hardware isEqualToString:@"iPhone15,3"])    return @"iPhone 14 Pro";
+    if ([hardware isEqualToString:@"iPhone15,4"])    return @"iPhone 15";
+    if ([hardware isEqualToString:@"iPhone15,5"])    return @"iPhone 15 Plus";
+    if ([hardware isEqualToString:@"iPhone16,1"])    return @"iPhone 15 Pro";
+    if ([hardware isEqualToString:@"iPhone16,2"])    return @"iPhone 15 Pro Max";
+    if ([hardware isEqualToString:@"iPhone17,1"])    return @"iPhone 16 Pro";
+    if ([hardware isEqualToString:@"iPhone17,2"])    return @"iPhone 16 Pro Max";
+    if ([hardware isEqualToString:@"iPhone17,3"])    return @"iPhone 16";
+    if ([hardware isEqualToString:@"iPhone17,4"])    return @"iPhone 16 Plus";
+    if ([hardware isEqualToString:@"iPhone17,5"])    return @"iPhone 16e";
 
     
 #pragma mark -ipod
@@ -215,6 +224,12 @@
     if ([hardware isEqualToString:@"iPad13,9"])     return @"iPad Pro (12.9-inch) (5th generation)";
     if ([hardware isEqualToString:@"iPad13,10"])     return @"iPad Pro (12.9-inch) (5th generation)";
     if ([hardware isEqualToString:@"iPad13,11"])     return @"iPad Pro (12.9-inch) (5th generation)";
+    if ([hardware isEqualToString:@"iPad13,16"])     return @"iPad Air 5th Gen (WiFi)";
+    if ([hardware isEqualToString:@"iPad13,17"])     return @"iPad Air 5th Gen (WiFi+Cellular)";
+    if ([hardware isEqualToString:@"iPad13,18"])     return @"iPad 10th Gen";
+    if ([hardware isEqualToString:@"iPad13,19"])     return @"iPad 10th Gen";
+
+    
 #pragma mark -Simulator
     if ([hardware isEqualToString:@"i386"])         return @"Simulator";
     if ([hardware isEqualToString:@"x86_64"])       return @"Simulator";
@@ -437,7 +452,7 @@
     if ([hardware hasPrefix:@"iPod"]) return @"iPod";
     if ([hardware hasPrefix:@"iPad"]) return @"iPad";
     
-    return nil;
+    return hardware;
 }
 
 

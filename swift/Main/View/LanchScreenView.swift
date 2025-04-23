@@ -173,7 +173,7 @@ class LanchScreenView: UIView {
         }
         else if progressViwe.progress >= 1.0 {
 
-            progressLabel.text = "100%"
+            progressLabel.text = "99%"
             timer?.invalidate()
             timer = nil
         } else {
