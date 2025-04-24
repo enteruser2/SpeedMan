@@ -1351,7 +1351,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1511,7 +1511,7 @@
 					"\"$(SRCROOT)/native/external/sources/boost-source\"",
 				);
 				INFOPLIST_FILE = swift/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man GO";
+				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the app to access your camera";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow the app to save images to the album";
@@ -1665,7 +1665,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1825,7 +1825,7 @@
 					"\"$(SRCROOT)/native/external/sources/boost-source\"",
 				);
 				INFOPLIST_FILE = swift/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man GO";
+				INFOPLIST_KEY_CFBundleDisplayName = "Speed Man";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the app to access your camera";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow the app to save images to the album";
