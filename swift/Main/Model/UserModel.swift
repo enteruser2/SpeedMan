@@ -30,7 +30,6 @@ class HeaderModel : HandyJSON {
 
 class DeviceLoginModel : HandyJSON {
     
-    var IsCheckVersion: Int = 1     // 判断是否审核版本，0-否，1-是
     var display_fb: Int = 0         // 是否隐藏facebook 1 隐藏 0 不隐藏
     var login_type: Int = 0         //  0 没有绑定第三方登录
     var token: String = ""          //  token
@@ -41,7 +40,6 @@ class DeviceLoginModel : HandyJSON {
     required init() {}
     
     func mapping(mapper: HelpingMapper) {
-        mapper <<< IsCheckVersion <-- "ManIsCheckVersion"
         mapper <<< display_fb <-- "Mandisplay_fb"
         mapper <<< login_type <-- "Manlogin_type"
         mapper <<< token <-- "Mantoken"

@@ -84,40 +84,10 @@ enum LanguageType:String {
         return login.value.0
     }
     
-//    func isCheckVersion() -> Bool{
-//        if(user?.IsCheckVersion == 1)
-//        {
-//            return true
-//        }
-//        return false
-//    }
-    
-    
-    //    var currentLanguage: YBUserModel? {
-    //        return login.value.0
-    //    }
-    //
-    //    var languageString:String{
-    //        return Localize.currentLanguage()
-    //    }
-    //
-    //    var localeString:String{
-    //        let identifier:String = NSLocale.current.identifier
-    //        if let r = identifier.range(of: "_") {
-    //            let range = NSRange(r,in:identifier)
-    //            let subString = identifier.suffix(identifier.count - range.location - 1)
-    //            return String(subString)
-    //        }
-    //        return ""
-    //    }
     
     override init() {
         super.init()
-        
-        //        let user = NSKeyedUnarchiver.unarchiveObject(withFile: self.userPath) as? YBUserModel
-        //        if let user = user {
-        //            login.accept((user, .login))
-        //        }
+    
         
         setupBinding()
         
