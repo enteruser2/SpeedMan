@@ -1,6 +1,17 @@
 # Uncomment the next line to define a global platform for your project
 
- platform :ios, '12.0'
+platform :ios, '12.0'
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == 'HandyJSON'
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'  # 禁用优化
+        config.build_settings['OPTIMIZATION_LEVEL'] = '0'             # 关闭 LLVM 优化
+      end
+    end
+  end
+end
 
 target 'SpeedMan' do
   # Comment the next line if you don't want to use dynamic frameworks
