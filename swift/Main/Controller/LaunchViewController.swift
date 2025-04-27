@@ -126,7 +126,7 @@ class LaunchViewController : BaseViewController,LoginCloseDelegate,DeleteAccount
         
         UserManager.shared.loginUser().asObservable().subscribe(onNext: { uiserModel in
             CommonTool.LogLine(message: "uiserModel ： \(String(describing: uiserModel?.toJSONString()))")
-            ALSdk.shared().settings.userIdentifier = String(describing:uiserModel?.homeId)
+            ALSdk.shared().settings.userIdentifier = uiserModel!.homeId.string
             self.openViewController()
             
         }, onError: {error in

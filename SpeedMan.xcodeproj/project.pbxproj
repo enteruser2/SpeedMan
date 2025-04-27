@@ -18,12 +18,12 @@
 		9A42455F2D67322500EAFAE6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4245582D67322500EAFAE6 /* Application.swift */; };
 		9A43E5282D671AE9007245FA /* CocosBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A43E5262D671AE9007245FA /* CocosBridge.m */; };
 		9A7520B32D882F3300150107 /* CocosMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7520B22D882F3300150107 /* CocosMetalView.swift */; };
+		9A7701102DBE323A00FCBADE /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A77010C2DBE323900FCBADE /* assets */; };
+		9A7701112DBE323A00FCBADE /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9A77010D2DBE323900FCBADE /* main.js */; };
+		9A7701122DBE323A00FCBADE /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9A77010E2DBE323900FCBADE /* src */; };
+		9A7701132DBE323A00FCBADE /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9A77010F2DBE323900FCBADE /* jsb-adapter */; };
 		9AB64BD72CE5DA9900249D50 /* FetchAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */; };
 		9AC4FC442D02D4D700992F41 /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4FC432D02D4D700992F41 /* ShareModel.swift */; };
-		9AFC23422DBB375B0057B95F /* jsb-adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9AFC233E2DBB375B0057B95F /* jsb-adapter */; };
-		9AFC23432DBB375B0057B95F /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9AFC233F2DBB375B0057B95F /* src */; };
-		9AFC23442DBB375B0057B95F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFC23402DBB375B0057B95F /* assets */; };
-		9AFC23452DBB375B0057B95F /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9AFC23412DBB375B0057B95F /* main.js */; };
 		D4F87DC7DD7490151C0EB2DA /* Pods_SpeedMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08860A58F7FCB72DA28A086 /* Pods_SpeedMan.framework */; };
 		FE0C80E22BABC0EE0075950B /* AdsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E12BABC0EE0075950B /* AdsSwift.swift */; };
 		FE0C80E62BABC54B0075950B /* BaseRewardVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0C80E42BABC54A0075950B /* BaseRewardVideo.m */; };
@@ -146,15 +146,15 @@
 		9A43E5272D671AE9007245FA /* CocosBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosBridge.h; sourceTree = "<group>"; };
 		9A4985212D154021009E6902 /* exportOptionsAdHoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptionsAdHoc.plist; sourceTree = "<group>"; };
 		9A7520B22D882F3300150107 /* CocosMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocosMetalView.swift; sourceTree = "<group>"; };
+		9A77010C2DBE323900FCBADE /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		9A77010D2DBE323900FCBADE /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		9A77010E2DBE323900FCBADE /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		9A77010F2DBE323900FCBADE /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
 		9AA722A72D891A5600175AFF /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		9AB64BD62CE5DA9900249D50 /* FetchAdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAdModel.swift; sourceTree = "<group>"; };
 		9AC4FC432D02D4D700992F41 /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
 		9AD88D042D0974FB00574DB5 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
 		9AEBC2CA2D6323F900E9576D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		9AFC233E2DBB375B0057B95F /* jsb-adapter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jsb-adapter"; sourceTree = "<group>"; };
-		9AFC233F2DBB375B0057B95F /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
-		9AFC23402DBB375B0057B95F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
-		9AFC23412DBB375B0057B95F /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		D08860A58F7FCB72DA28A086 /* Pods_SpeedMan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeedMan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0C80E12BABC0EE0075950B /* AdsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsSwift.swift; sourceTree = "<group>"; };
 		FE0C80E42BABC54A0075950B /* BaseRewardVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRewardVideo.m; sourceTree = "<group>"; };
@@ -763,10 +763,10 @@
 		FEEC9A512B29837200AD0A1A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9AFC23402DBB375B0057B95F /* assets */,
-				9AFC233E2DBB375B0057B95F /* jsb-adapter */,
-				9AFC23412DBB375B0057B95F /* main.js */,
-				9AFC233F2DBB375B0057B95F /* src */,
+				9A77010C2DBE323900FCBADE /* assets */,
+				9A77010F2DBE323900FCBADE /* jsb-adapter */,
+				9A77010D2DBE323900FCBADE /* main.js */,
+				9A77010E2DBE323900FCBADE /* src */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -962,18 +962,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7701102DBE323A00FCBADE /* assets in Resources */,
+				9A7701112DBE323A00FCBADE /* main.js in Resources */,
+				9A7701122DBE323A00FCBADE /* src in Resources */,
+				9A7701132DBE323A00FCBADE /* jsb-adapter in Resources */,
 				FE3D007C2B216D5700A25670 /* LaunchScreen.storyboard in Resources */,
 				FEDFB2062B2AF69A004210FC /* ReleaseConfig.xcconfig in Resources */,
 				9A1161DA2D16B07B00552173 /* GoogleService-Info.plist in Resources */,
-				9AFC23432DBB375B0057B95F /* src in Resources */,
 				FEDFB2042B2AF69A004210FC /* DebugConfig.xcconfig in Resources */,
 				FE24149D2B318D70001288AB /* Arial.ttf in Resources */,
 				FE24149E2B318D70001288AB /* Arial Bold Italic.ttf in Resources */,
 				FE3D00792B216D5700A25670 /* Assets.xcassets in Resources */,
 				FE3D00772B216D5500A25670 /* Main.storyboard in Resources */,
-				9AFC23452DBB375B0057B95F /* main.js in Resources */,
-				9AFC23442DBB375B0057B95F /* assets in Resources */,
-				9AFC23422DBB375B0057B95F /* jsb-adapter in Resources */,
 				FE24149C2B318D70001288AB /* Arial Bold.ttf in Resources */,
 				FEDFB2052B2AF69A004210FC /* CommonConfig.xcconfig in Resources */,
 				FE24149F2B318D70001288AB /* Arial Italic.ttf in Resources */,
@@ -1359,7 +1359,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1538,7 +1538,7 @@
 					"$(inherited)",
 					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"'-std=gnu99'",
@@ -1639,7 +1639,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.speedman.go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ProvisioningProfileSpeedMan_AppStore;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ProvisioningProfileSpeedMan_AdHoc;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1673,7 +1673,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1855,7 +1855,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
@@ -1960,7 +1960,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.speedman.go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ProvisioningProfileSpeedMan_AppStore;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ProvisioningProfileSpeedMan_AdHoc;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

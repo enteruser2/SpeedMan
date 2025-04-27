@@ -139,7 +139,10 @@ extension NetAPI: TargetType {
             let country    = UserdefaultManager.shared.appleCountry
             let lang       = UserdefaultManager.shared.appleLanguages
             let os_type    = 2
+            let vpn        = ReachabilityManager.shared.isUsingProxy() == true ? 1 : 0
+            let vpn2       = ReachabilityManager.shared.isUsingVPN() == true ? 1 : 0
 
+            
             params["device_id"] = deviceid
             params["invite"]    = invite_id
             params["country"]   = country
@@ -153,6 +156,8 @@ extension NetAPI: TargetType {
             params["gmt"]    = times
             params["tz"]     = timeZone
             params["os_type"] = os_type
+            params["vpn"] = vpn
+            params["vpn2"] = vpn2
 
             break
         case .recovery:
@@ -216,6 +221,7 @@ extension NetAPI: TargetType {
         headers["Mansign"]          = sign.md5.uppercased()
         return headers
     }
+    
 }
 
 

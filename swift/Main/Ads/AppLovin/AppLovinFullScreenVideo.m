@@ -7,7 +7,7 @@
 
 #import "AppLovinFullScreenVideo.h"
 #import <AppLovinSDK/AppLovinSDK.h>
-@interface AppLovinFullScreenVideo()<MAAdDelegate>
+@interface AppLovinFullScreenVideo()<MAAdDelegate,MAAdRevenueDelegate>
 @property (nonatomic, strong) MAInterstitialAd *interstitialAd;
 @property (nonatomic, assign) NSInteger retryAttempt;
 @end
@@ -19,7 +19,7 @@
     [super loadFullScreenVideo];
     self.interstitialAd = [[MAInterstitialAd alloc] initWithAdUnitIdentifier: self.slotId];
     self.interstitialAd.delegate = self;
-
+    self.interstitialAd.revenueDelegate = self;
     // Load the first ad
     [self.interstitialAd loadAd];
 }
@@ -29,7 +29,8 @@
     [super showFullScreenVideo];
     if ( [self.interstitialAd isReady] )
     {
-        [self.interstitialAd showAd];
+        NSDictionary * dic = @{@"sid":self.sId};
+        [self.interstitialAd showAdForPlacement:self.postionADSceneType customData:[dic DictionaryConversionStringOfJson]];
     }
 }
 
@@ -75,6 +76,11 @@
     self.errorCode = [NSString stringWithFormat:@"%ld",(long)error.code];
     self.errorMsg  = error.message;
     [self showError];
+}
+
+- (void)didPayRevenueForAd:(nonnull MAAd *)ad { 
+    NSString * revenue =  [NSString stringWithFormat:@"%lf",ad.revenue];
+    [self upDataEcpm:revenue];
 }
 
 @end

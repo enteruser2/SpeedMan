@@ -92,7 +92,7 @@ class UserModel : HandyJSON {
     var RewardCashPerPerson: Float = 0// 邀请一个人奖励余额(仅提供给我的 页面使用)
     var share_url: String = ""// 分享url
     var login_status: Int = 0         //  1-表示游客登录
-    var ReviewVersion: Int = 0  // 审核版本（1表示是审核版本）
+    var RVersion: Int = 0  // 审核版本（1表示是审核版本）
     // 国家id
     var country: Int = 0
     // 金币提现兑换比例
@@ -220,7 +220,7 @@ class UserModel : HandyJSON {
         mapper <<< InvitationLevelReward <-- "ManInvitationLevelReward"
         mapper <<< share_url <-- "Manshare_url"
         mapper <<< login_type <-- "Manlogin_type"
-        mapper <<< ReviewVersion <-- "ManReviewVersion"
+        mapper <<< RVersion <-- "ManRVersion"
         mapper <<< country <-- "Mancountry"
         mapper <<< GoldPrice <-- "ManGoldPrice"
         mapper <<< Banknote1 <-- "ManBanknote1"

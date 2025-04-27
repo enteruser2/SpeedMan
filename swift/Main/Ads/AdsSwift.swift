@@ -161,6 +161,8 @@ import AppLovinSDK
                 var params:[String:Any] = [:]
                 params["slotId"] = model.id
                 params["adType"] = model.type.description
+                params["sId"] = model.sId
+
 //                params["slotId"] = "ca-app-pub-3940256099942544/1712485313"
 //                params["adType"] = "2"
                 params["postionADSceneType"] = secenType

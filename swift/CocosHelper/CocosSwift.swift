@@ -134,6 +134,7 @@ enum ADSceneType: String {
     
     @objc static func SendJSError(error:String)
     {
+        CommonTool.LogLine(message: "SendJSError \(error)")
         let model = ExceptionModel.init(name: "SendJSError", reason: error)
         Crashlytics.crashlytics().record(exceptionModel: model)
     }
@@ -161,7 +162,8 @@ enum ADSceneType: String {
     }
     
     @objc static func getVersionNumber()->String{
-        
+        let model = ExceptionModel.init(name: "SendJSError", reason: "testerror")
+        Crashlytics.crashlytics().record(exceptionModel: model)
         return UserdefaultManager.shared.version
     }
     

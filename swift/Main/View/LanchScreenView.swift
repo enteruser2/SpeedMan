@@ -65,7 +65,6 @@ class LanchScreenView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUI()
-            
     }
     
     

@@ -41,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)rewardIssue;
 
+-(void)upDataEcpm:(NSString *)cpmStr;
+
 @end
 
 NS_ASSUME_NONNULL_END

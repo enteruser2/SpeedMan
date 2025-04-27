@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int eventType;// 广告事件类型
 @property (nonatomic, strong) NSString * errorCode;
 @property (nonatomic, strong) NSString * errorMsg;
+@property (nonatomic, strong) NSString * cpmStr;
 
 @property (nonatomic,strong) id obj;
 @property (nonatomic, assign) BOOL isClick; // 是否点击广告
@@ -39,6 +40,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)clickVideo;
 
 -(void)rewardIssue;
+
+-(void)upDataEcpm:(NSString *)cpmStr;
+
 @end
 
 NS_ASSUME_NONNULL_END

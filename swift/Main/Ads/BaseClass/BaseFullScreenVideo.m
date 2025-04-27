@@ -125,6 +125,11 @@
     self.eventType = Click;
 }
 
+// 上报ecpm
+-(void)upDataEcpm:(NSString *)cpmStr {
+    self.cpmStr = cpmStr;
+    self.eventType = Revenue;
+}
 
 - (void)setEventType:(int)eventType
 {
