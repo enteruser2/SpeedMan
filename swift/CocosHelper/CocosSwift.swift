@@ -96,17 +96,39 @@ enum ADSceneType: String {
             break;
         case "3":
             do{
-                let shareStr = String(format: "%@%@", model?.text ?? "",model?.url ?? "")
-                let url = String(format:"twitter://post?message=%@",shareStr.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")
-                let twitterURL = URL(string: url)
+//                let shareStr = String(format: "%@%@", model?.text ?? "",model?.url ?? "")
+//                let url = String(format:"twitter://post?message=%@",shareStr.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")
+//                let twitterURL = URL(string: url)
+//                
+//                if(UIApplication.shared.canOpenURL(URL(string: "twitter://")!))
+//                {
+//                    UIApplication.shared.open(twitterURL!)
+//                }
+//                else
+//                {
+//                    ProgressHUD.shared.showProgressTipHUD(view:CocosHelper.getCurrentVC().view , withText: UserManager.shared.translateModel!.t1907, afterDelay: 2)
+//                }
                 
-                if(UIApplication.shared.canOpenURL(URL(string: "twitter://")!))
-                {
-                    UIApplication.shared.open(twitterURL!)
+                let shareText = (model?.text ?? "") + (model?.url ?? "")
+                
+                // 优先尝试 X（原 Twitter）的 URL Scheme
+                let xURLString = "x-post://post?text=\(shareText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")"
+                if let xURL = URL(string: xURLString), UIApplication.shared.canOpenURL(xURL) {
+                    UIApplication.shared.open(xURL, options: [:], completionHandler: nil)
+                    return
                 }
-                else
-                {
-                    ProgressHUD.shared.showProgressTipHUD(view:CocosHelper.getCurrentVC().view , withText: UserManager.shared.translateModel!.t1907, afterDelay: 2)
+                
+                // 回退到旧版 Twitter 的 Scheme（可能不生效）
+                let twitterURLString = "twitter://post?message=\(shareText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")"
+                if let twitterURL = URL(string: twitterURLString), UIApplication.shared.canOpenURL(twitterURL) {
+                    UIApplication.shared.open(twitterURL, options: [:], completionHandler: nil)
+                    return
+                }
+                
+                // 如果未安装 App，跳转到网页版 Twitter/X 的分享页面
+                let webURLString = "https://twitter.com/intent/tweet?text=\(shareText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")"
+                if let webURL = URL(string: webURLString) {
+                    UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
                 }
             }
             
@@ -215,7 +237,13 @@ enum ADSceneType: String {
     }
     
     @objc static func openWebView(url:String){
-        ProgressHUD.shared.showProgressTipHUD(view: CocosHelper.getCurrentVC().view, withText: UserManager.shared.translateModel!.t1904, afterDelay: 2)
-        NSString.copy(toUIPasteboard: url)
+        if let webURL = URL(string: url) {
+            UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
+        }
+        else
+        {
+            ProgressHUD.shared.showProgressTipHUD(view: CocosHelper.getCurrentVC().view, withText: UserManager.shared.translateModel!.t1904, afterDelay: 2)
+            NSString.copy(toUIPasteboard: url)
+        }
     }
 }
