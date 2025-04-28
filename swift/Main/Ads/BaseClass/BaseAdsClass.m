@@ -55,6 +55,7 @@ NSString *const FaceBook_Platfrom = @"FaceBook";
     //添加是否为show方法判断参数，来区别是否自动展示
     NSDictionary * dict = [parameter StringOfJsonConversionDictionary];
     [dict setValue:@(isShowFuc) forKey:@"isShowFuc"];
+    [dict setValue:@"" forKey:@"cpmStr"];
     parameter = [dict DictionaryConversionStringOfJson];
     
     NSString * classStr = [NSString stringWithFormat:@"%@%@",platfrom,type];

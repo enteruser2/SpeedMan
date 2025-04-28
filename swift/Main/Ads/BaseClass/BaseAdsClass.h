@@ -51,6 +51,7 @@ extern NSString *const FullScreenVideo_Type;
 @property (nonatomic,copy) NSString * platformType;
 @property (nonatomic,copy) NSString * postionADSceneType; // 广告场景类型
 @property (nonatomic,copy) NSString * sId;
+@property (nonatomic, strong) NSString * cpmStr;
 
 @property (nonatomic,assign) BOOL  isShowFuc;//是否自动展示
 
