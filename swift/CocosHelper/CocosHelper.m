@@ -177,7 +177,8 @@ NSString *  cocos_callbackId = @"";
 }
 
 + (void)openWebView:(NSString*)url{
-    
+    NSLog(@"CocosHelper----openWebView :%@",url);
+    [CocosSwift openWebViewWithUrl:url];
 }
 
 
