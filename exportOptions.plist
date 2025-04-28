@@ -5,7 +5,7 @@
 	<key>teamID</key>
 	<string>27HW9K4T64</string>
 	<key>method</key>
-	<string>app-store</string>
+	<string>app-store-connect</string>
 	<key>uploadBitcode</key>
 	<false/>
 	<key>uploadSymbols</key>
