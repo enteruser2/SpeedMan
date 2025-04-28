@@ -35,7 +35,15 @@
         self.rewardedAd = ad;
         NSLog(@"Rewarded ad loaded.");
         self.rewardedAd.fullScreenContentDelegate = self;
-        
+        __auto_type __weak weakSelf = self;
+        self.rewardedAd.paidEventHandler = ^void(GADAdValue *_Nonnull value){
+            __auto_type strongSelf = weakSelf;
+            NSDecimalNumber *revenue = value.value;
+            NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+            [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+            NSString *revenueStr = [formatter stringFromNumber:revenue];
+            [strongSelf upDataEcpm:revenueStr];
+        };
         [self loadSuccess];
         [self showRewardVideo];
     }];
