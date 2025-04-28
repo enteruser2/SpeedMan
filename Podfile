@@ -10,6 +10,9 @@ post_install do |installer|
         config.build_settings['OPTIMIZATION_LEVEL'] = '0'             # 关闭 LLVM 优化
       end
     end
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+    end
   end
 end
 
@@ -45,15 +48,15 @@ target 'SpeedMan' do
   # Firebase
   pod 'FirebaseAnalytics'
   pod 'FirebaseCrashlytics'
-
+  
   # 社交登录
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit','~> 17.0.3'
   pod 'FBSDKShareKit','~> 17.0.3'
-
+  
   # 穿山甲
   pod 'Ads-Global','~> 5.8.0.8'
-
+  
   # max
   pod 'AppLovinSDK','~> 12.4.1'
   pod 'AppLovinMediationFacebookAdapter','~> 6.15.0.0'
@@ -62,9 +65,9 @@ target 'SpeedMan' do
   pod 'AppLovinMediationUnityAdsAdapter','~> 4.10.0.0'
   pod 'AppLovinMediationVerveAdapter','~> 3.0.1.0'
   pod 'AppLovinMediationVungleAdapter','~> 7.4.1.0'
-
+  
   #admob
   pod 'Google-Mobile-Ads-SDK','~> 11.1.0'
-
+  
 end
 
