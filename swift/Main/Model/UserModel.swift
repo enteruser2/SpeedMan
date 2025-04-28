@@ -141,7 +141,7 @@ class UserModel : HandyJSON {
     var ManRestartFriends: Int = 0//重启5倍积分活动所需邀请人数
     var ManFreeRestartTimes: Int = 0//超过重置次数需要观看视频
     var ManIx1: Int = 0//下线获得到的钻石
-    var ManIx2: Int = 0//下线获得到的vip经验
+    var ManIx2: Float = 0//下线获得到的vip经验
     var ManGetEnergyNumber: Int = 0//每日体力可购买数
     var ManGetEnergyTimes: Int = 0//每次买到的体力
     //等于1显示弹窗

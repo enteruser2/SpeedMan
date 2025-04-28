@@ -176,6 +176,10 @@ NSString *  cocos_callbackId = @"";
     [CocosSwift vibrate];
 }
 
++ (void)openWebView:(NSString*)url{
+    
+}
+
 
 +(UIViewController *)getCurrentVC
 {

@@ -162,8 +162,7 @@ enum ADSceneType: String {
     }
     
     @objc static func getVersionNumber()->String{
-        let model = ExceptionModel.init(name: "SendJSError", reason: "testerror")
-        Crashlytics.crashlytics().record(exceptionModel: model)
+
         return UserdefaultManager.shared.version
     }
     
@@ -213,5 +212,10 @@ enum ADSceneType: String {
     
     @objc static func vibrate(){
         AudioServicesPlaySystemSound(1519)
+    }
+    
+    @objc static func openWebView(url:String){
+        ProgressHUD.shared.showProgressTipHUD(view: CocosHelper.getCurrentVC().view, withText: UserManager.shared.translateModel!.t1904, afterDelay: 2)
+        NSString.copy(toUIPasteboard: url)
     }
 }

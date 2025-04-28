@@ -220,6 +220,7 @@
                            @"postionADSceneType":self.postionADSceneType,
                            @"source":source,
                            @"ad_type":@(1),
+                           @"cpmStr":self.cpmStr,
                            @"source_id":self.slotId,
                            @"error_code":self.errorCode,
                            @"error_msg":self.errorMsg,

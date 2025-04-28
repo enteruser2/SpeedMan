@@ -44,6 +44,8 @@ extern NSString *  cocos_callbackId;
 
 + (void)vibrate;
 
++ (void)openWebView:(NSString*)url;
+
 +(NSString *)getRequestHeaderInfo;
 
 +(NSString *) getTranslateInfo;

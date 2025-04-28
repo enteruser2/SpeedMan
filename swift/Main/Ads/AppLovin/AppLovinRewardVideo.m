@@ -36,7 +36,7 @@
     [super showRewardVideo];
     if ( [self.rewardedAd isReady] )
     {
-        NSDictionary * dic = @{@"sid":self.sId};
+        NSDictionary * dic = @{@"Mansid":self.sId};
         [self.rewardedAd showAdForPlacement:self.postionADSceneType customData:[dic DictionaryConversionStringOfJson]];
     }
 }

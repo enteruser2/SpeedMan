@@ -29,7 +29,7 @@
     [super showFullScreenVideo];
     if ( [self.interstitialAd isReady] )
     {
-        NSDictionary * dic = @{@"sid":self.sId};
+        NSDictionary * dic = @{@"Mansid":self.sId};
         [self.interstitialAd showAdForPlacement:self.postionADSceneType customData:[dic DictionaryConversionStringOfJson]];
     }
 }
